@@ -1,0 +1,246 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: #333333;
+  font-family: 'Open Sans';
+  font-size: 14px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.block-header {
+  font-family: Book Antiqua;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+/* header */
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 99;
+  background: #fff;
+}
+.top-header {
+  display: flex;
+  height: 55px;
+  justify-content: space-between;
+  align-content: center;
+}
+.top-header > div,
+.top-header > nav {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.header-delivery {
+  margin-bottom: 9px;
+}
+.header-city span {
+  color: #0F3978;
+  margin-left: 10px;
+  border-bottom: 1px dashed #0F3978;
+}
+.top-menu {
+  width: 588px;
+}
+.top-menu__item {
+  color: #333;
+  margin-right: 38px;
+}
+.search-form {
+  cursor: pointer;
+}
+.header-phones__number {
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 1.5714rem;
+  color: #D31473;
+}
+.midle-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 165px;
+}
+.midle-header-wrap {
+  background: #F7F7F7;
+}
+.header-logo__item {
+  display: flex;
+  font-family: Book Antiqua;
+  font-weight: bold;
+  font-size: 2.8571rem;
+  color: #33448C;
+}
+.header-logo__item h1 {
+  font-size: 2.8571rem;
+}
+.header-tagline {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  color: #D31473;
+}
+.button-callback {
+  width: 165px;
+  height: 51px;
+  font-size: 1.003rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 51px;
+  color: #0F3978;
+  border: 1px solid #0F3978;
+  border-radius: 5px;
+}
+.bottom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-menu {
+  display: flex;
+  align-items: center;
+  height: 81px;
+  font-weight: 600;
+  font-size: 1.071rem;
+}
+.main-menu__item {
+  position: relative;
+  display: block;
+  margin-right: 35px;
+  text-transform: uppercase;
+}
+.main-menu__item a {
+  color: #333333;
+}
+.main-menu__item:hover > .sub-menu {
+  position: absolute;
+  top: 100%;
+  display: flex;
+}
+.main-menu__item:nth-child(n+2):after {
+  display: inline-block;
+  vertical-align: middle;
+  width: 9px;
+  height: 5px;
+  margin-left: 4px;
+  content: ' ';
+  background: url('../img/icon/icon_arrow.svg') no-repeat center;
+}
+.main-menu__item:first-child > .main-menu__link {
+  color: #D31473;
+}
+.main-menu__item:first-child img {
+  margin-right: 5px;
+}
+.main-menu__item:nth-child(5):after {
+  content: none;
+}
+.header-cart img {
+  width: 24px;
+}
+.sub-menu {
+  display: none;
+  padding: 40px;
+  background: #fff;
+  border-radius: 9px;
+}
+.sub-menu__col {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+.sub-menu__link {
+  margin-bottom: 17px;
+  white-space: nowrap;
+}
+.main-slider {
+  max-width: 100%;
+  height: 692px;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+.main-slider__item {
+  position: relative;
+}
+.main-slider__text {
+  position: absolute;
+  top: 35%;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 3.35rem;
+}
+.main-slider__text span {
+  font-size: 1.514rem;
+  font-weight: normal;
+}
+.banners {
+  display: flex;
+  margin-bottom: 60px;
+}
+.banners-item {
+  margin-left: 30px;
+}
+.banners-item:nth-child(n+2) {
+  align-self: flex-end;
+}
+.banners-item__text {
+  position: relative;
+  z-index: 1;
+  height: 50px;
+  font-size: 26px;
+  color: #fff;
+}
+.banners-item__text span {
+  position: relative;
+  z-index: 1;
+  vertical-align: middle;
+}
+.banners-item__text:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #97B3DD;
+  opacity: 0.5;
+  content: '';
+}
+.first-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-width: 470px;
+  height: 470px;
+  margin-left: 0px;
+  background: url(../img/banner-1.jpg) no-repeat center;
+  text-align: center;
+}
+.right-banners {
+  display: flex;
+  flex-wrap: wrap;
+}
+.separator {
+  display: block;
+  margin: 50px auto;
+  text-align: center;
+}
+.div {
+  height: 500px;
+  width: 1000px;
+}
