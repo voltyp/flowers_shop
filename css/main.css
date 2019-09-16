@@ -240,6 +240,48 @@ header {
   margin: 50px auto;
   text-align: center;
 }
+.catalog {
+  display: flex;
+  flex-direction: column;
+}
+.catalog-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.catalog-menu__item {
+  margin-left: 44px;
+}
+.catalog-menu > .active {
+  color: #D31473;
+}
+.catalog-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.catalog-items__img {
+  position: relative;
+}
+.catalog-items__img_hover {
+  position: absolute;
+  top: 0;
+  padding: 40px;
+}
+.catalog-items__img:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background: #fff;
+  opacity: 0.5;
+  content: '';
+}
+.catalog-items__card {
+  width: 270px;
+  text-align: center;
+  border-radius: 9px;
+}
 .div {
   height: 500px;
   width: 1000px;
