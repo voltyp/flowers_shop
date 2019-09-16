@@ -119,7 +119,9 @@
         <!-- menu-end -->
 
         <a  class="header-cart" href="#">
-          <img src="img/icon/icon_cart.svg" alt="Корзина">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="basket" clip-rule="evenodd" d="M24.4409 14.955C23.9311 15.885 22.9415 16.5 21.8169 16.5H10.646L8.99666 19.5H26.99V22.5H8.99666C6.71751 22.5 5.27804 20.055 6.37263 18.045L8.39688 14.385L2.99889 3H0V0H4.90318L6.31266 3H28.5044C29.644 3 30.3637 4.23 29.8089 5.22L24.4409 14.955ZM25.9553 6H7.73706L11.2907 13.5H21.8168L25.9553 6ZM8.99647 24C7.34708 24 6.01257 25.35 6.01257 27C6.01257 28.65 7.34708 30 8.99647 30C10.6459 30 11.9954 28.65 11.9954 27C11.9954 25.35 10.6459 24 8.99647 24ZM21.0071 27C21.0071 25.35 22.3416 24 23.991 24C25.6404 24 26.9899 25.35 26.9899 27C26.9899 28.65 25.6404 30 23.991 30C22.3416 30 21.0071 28.65 21.0071 27Z" />
+          </svg>
         </a>
       </div>
       <!-- bottom-header -->
@@ -172,9 +174,9 @@
   <section>
     <div class="container">
 
-      <div class="block-header">
+      <h2 class="block-header">
         Мы предлагаем
-      </div>
+      </h2>
 
       <img class="separator" src="img/icon/icon_separator.svg" alt="">
 
@@ -188,54 +190,153 @@
 
         <div class="catalog-items">
 
-          <div class="catalog-items__card">
+          <div class="card-product">
 
-            <div class="catalog-items__img">
+            <div class="card-product__img">
               <img src="img/card-flower.jpg" alt="">
-
-              <div class="catalog-items__img_hover">
-                <span class="hover-text">
-                  Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
-                </span>
-              </div>
+              <div class="card-product__action">Акция</div>
+              <span class="card-product__img_text">
+                Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
+              </span>
+              <div class="card-product__img_bg"></div>
             </div>
             <!-- catalog-items__img-end -->
-            <div class="catalog-items__title">
+            <h3 class="card-product__title">
               Лакомка
-            </div>
+            </h3>
             <!-- catalog-items__title-end -->
 
-            <div class="catalog-items__cost">
-              <span class="crossed-out">5200</span>
-              <span class="crossed-out">1200</span>
+            <div class="card-product__cost">
+              <span class="card-product__cost_item">5200 &#x20b8</span>
+              <span class="card-product__cost_item">1200 &#x20b8</span>
             </div>
             <!-- catalog-items__cost-end -->
 
-            <a href="#" class="catalog-items__link">
+            <a href="#" class="card-product__link">
               Купить в один клик
             </a>
             <!-- catalog-items__link-end -->
 
-            <div class="catalog-items__timer">
+            <div class="card-product__timer">
               12.01.20
             </div>
             <!-- catalog-items__timer-end -->
 
-            <div class="catalog-items__button">
+            <div class="card-product__button">
+              <svg viewBox="0 0 30 30">
+                <use xlink:href="#basket"/>
+              </svg>
+
               Добавить в корзину
             </div>
             <!-- catalog-items__button-end -->
 
           </div>
-          <!-- catalog-items-end -->
+          <!-- card-product one end -->
+          <div class="middle-action">
+            <img src="img/middle-banner.jpg" alt="акция на растения">
 
+            <div class="middle-action__description">
+              <h3 class="middle-action__title">
+                Акция на комнатные растения
+              </h3>
+              <span>
+                Компания "Art Flowers" проводит уникальную акцию на все 
+                комнатные растения со скидкой 20%
+              </span>
+              <a class="middle-action__button" href="#">Подробнее</a>
+            </div>
+
+            <div class="middle-action__timer"></div>
+          </div>
+          <!-- middle-action-end -->
+
+          <div class="card-product">
+
+            <div class="card-product__img">
+              <img src="img/card-flower-2.jpg" alt="">
+              <div class="card-product__action day">Букет дня</div>
+              <span class="card-product__img_text">
+                Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
+              </span>
+              <div class="card-product__img_bg"></div>
+            </div>
+            <!-- catalog-items__img-end -->
+            <h3 class="card-product__title">
+              Цветочная нимфа
+            </h3>
+            <!-- catalog-items__title-end -->
+
+            <div class="card-product__cost">
+              <span class="card-product__cost_item">5200 &#x20b8</span>
+              <span class="card-product__cost_item">1200 &#x20b8</span>
+            </div>
+            <!-- catalog-items__cost-end -->
+
+            <a href="#" class="card-product__link">
+              Купить в один клик
+            </a>
+            <!-- catalog-items__link-end -->
+
+            <div class="card-product__button">
+              <svg viewBox="0 0 30 30">
+                <use xlink:href="#basket"/>
+              </svg>
+
+              Добавить в корзину
+            </div>
+            <!-- catalog-items__button-end -->
+
+          </div>
+          <!-- card-product two end -->
+
+          <!-- catalog-items-end -->
         </div>
+
+        <a class="buttom-normal" href="#">Перейти в каталог</a>
       </div>
 
     </div>
   </section>
+  <!-- catalog-end -->
 
-  <div class="div"></div>
+  <section class="wrap-review">
+    
+    <div class="container">
+      <h2 class="block-header">
+          Отзывы наших клиентов
+      </h2>
+
+      <div class="wrap-slider-review">
+        <div class="slider-review">
+          <div class="slider-review__item">
+
+              <div class="slider-review__item_top">
+                <span class="slider-review__name">Наталья Иванова</span>
+                <span class="slider-review__data">21.10.2019</span>
+              </div>
+
+              <div class="slider-review__item_bot">
+                <p>
+                  Очень рада, что нашла ваш интернет-магазин. Всегда радуете приятными подарками и хорошими ценами. Я три года покупаю у вас цветы на праздники для моей мамочки только у вас!
+                </p>
+                
+                <p>
+                  Всегда ваш коллектив радует безупречной работой. Отдельная благодарность, за то что расширяете ассортимент.  
+                </p>
+              </div>
+
+          </div>
+        </div>
+        <i class="arrow-slider-left"></i>
+        <i class="arrow-slider-right"></i>
+      </div>
+
+      <a href="#" class="review-button">Оставить свой озтыв</a>
+    </div>
+  </section>
+  <!-- slider-review-end -->
+  
   <div class="div"></div>
 </body>
 </html>
