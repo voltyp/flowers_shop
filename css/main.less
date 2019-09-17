@@ -15,9 +15,18 @@ body {
   box-sizing: border-box;
 }
 
-a, a:hover {
+a, a:hover, ul, li  {
   text-decoration: none;
+  list-style-type: none;
 }
+
+input:active, :hover, :focus,
+select:active, :hover, :focus,
+option:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
 
 .container {
   width: 1200px;
@@ -45,6 +54,7 @@ a, a:hover {
   background: #D31473;
   border-radius: 9px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 // timer-main-settings
@@ -934,12 +944,44 @@ header {
     padding: 20px;
     font-weight: 600;
     font-size: 1.071rem;
-    text-transform: uppercase;
-    color: #0F3978;
     background: #F7F7F7;
     border-radius: 6px;
+
+    &_title {
+      text-transform: uppercase;
+      color: #0F3978;
+    }
+  }
+
+  &__list {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 29px;
+
+    &_item {
+
+      & .expand-list {
+        vertical-align: middle;
+        cursor: pointer;
+      }
+    }
+
+    & a {
+      text-transform: initial;
+      color: #555555;
+      
+      &:hover {
+        color: #D31473;
+      }
+    }
+  }
+
+  &__sub_menu .left-menu__list_item {
+    padding-left: 20px;
   }
 }
+// left menu on page-catalog end 
+
 
 .catalog_page__products {
 
@@ -953,12 +995,83 @@ header {
       box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1);
       border-radius: 3px;
       border: 0;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:focus,:hover {
+        outline: 1px solid #D31473;
+      }
     }
   }
 
   & .count-result {
     float: right;
-    padding: 10px 23px;
+    padding: 10px 0;
     clear: both;
   }
+}
+
+// page card product
+
+.page-product {
+  display: flex;
+
+  &__info {
+    flex: 1;
+
+    & .product-article {
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #0F3978;
+      margin-bottom: 30px;
+
+      & span {
+        font-weight: normal;
+        color: #555555;
+      }
+
+    }
+  }
+
+  &__description {
+    display: flex;
+
+    &_col {
+      width: 270px;
+      display: flex;
+      flex-direction: column;
+      margin-right: 70px;
+
+      & .timer {
+        margin-top: 0;
+        padding: 20px 0;
+        background: #F7F7F7;
+        border-radius: 6px;
+      }
+
+      & .card-product__cost {
+        font-size: 1.714rem;
+      }
+
+      & .card-product__button {
+        margin: 0 auto 20px auto;
+        text-align: center;
+      }
+
+      & .buy-btn {
+        background: #0F3978;
+      }
+
+      & .catalog_page__products_menu_item {
+        width: 230px;
+        margin: 0 0 20px;
+      }
+    }
+  }
+}
+
+.slider-page-product {
+  flex: 1;
 }

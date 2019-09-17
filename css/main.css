@@ -13,8 +13,23 @@ body {
   box-sizing: border-box;
 }
 a,
-a:hover {
+a:hover,
+ul,
+li {
   text-decoration: none;
+  list-style-type: none;
+}
+input:active,
+:hover,
+:focus,
+select:active,
+:hover,
+:focus,
+option:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
 }
 .container {
   width: 1200px;
@@ -40,6 +55,7 @@ a:hover {
   background: #D31473;
   border-radius: 9px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 .timer {
   display: flex;
@@ -744,10 +760,31 @@ header {
   padding: 20px;
   font-weight: 600;
   font-size: 1.071rem;
-  text-transform: uppercase;
-  color: #0F3978;
   background: #F7F7F7;
   border-radius: 6px;
+}
+.left-menu__item_title {
+  text-transform: uppercase;
+  color: #0F3978;
+}
+.left-menu__list {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 29px;
+}
+.left-menu__list_item .expand-list {
+  vertical-align: middle;
+  cursor: pointer;
+}
+.left-menu__list a {
+  text-transform: initial;
+  color: #555555;
+}
+.left-menu__list a:hover {
+  color: #D31473;
+}
+.left-menu__sub_menu .left-menu__list_item {
+  padding-left: 20px;
 }
 .catalog_page__products_menu_item {
   width: 200px;
@@ -758,8 +795,63 @@ header {
   border-radius: 3px;
   border: 0;
 }
+.catalog_page__products_menu_item:last-child {
+  margin-right: 0;
+}
+.catalog_page__products_menu_item:focus,
+.catalog_page__products_menu_item :hover {
+  outline: 1px solid #D31473;
+}
 .catalog_page__products .count-result {
   float: right;
-  padding: 10px 23px;
+  padding: 10px 0;
   clear: both;
+}
+.page-product {
+  display: flex;
+}
+.page-product__info {
+  flex: 1;
+}
+.page-product__info .product-article {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #0F3978;
+  margin-bottom: 30px;
+}
+.page-product__info .product-article span {
+  font-weight: normal;
+  color: #555555;
+}
+.page-product__description {
+  display: flex;
+}
+.page-product__description_col {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+.page-product__description_col .timer {
+  margin-top: 0;
+  padding: 20px 0;
+  background: #F7F7F7;
+  border-radius: 6px;
+}
+.page-product__description_col .card-product__cost {
+  font-size: 1.714rem;
+}
+.page-product__description_col .card-product__button {
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+.page-product__description_col .buy-btn {
+  background: #0F3978;
+}
+.page-product__description_col .catalog_page__products_menu_item {
+  width: 230px;
+  margin: 0 0 20px;
+}
+.slider-page-product {
+  flex: 1;
 }
