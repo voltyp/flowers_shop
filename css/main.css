@@ -971,3 +971,22 @@ header {
 .slider-page-product {
   flex: 1;
 }
+.basket {
+  margin-bottom: 100px;
+}
+.basket__nav {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #D31473;
+}
+.basket__nav_step {
+  font-family: Book Antiqua;
+  font-weight: bold;
+  font-size: 1.286rem;
+  color: #989898;
+}
+.basket__nav_step.active {
+  color: #D31473;
+}
