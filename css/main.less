@@ -20,6 +20,10 @@ a, a:hover, ul, li  {
   list-style-type: none;
 }
 
+button {
+  border: 0;
+}
+
 input:active, :hover, :focus,
 select:active, :hover, :focus,
 option:active, :hover, :focus {
@@ -1227,6 +1231,7 @@ header {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    margin-bottom: 25px;
     padding-bottom: 40px;
     border-bottom: 1px solid #D31473;
 
@@ -1241,4 +1246,332 @@ header {
       }
     }
   }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0px 25px;
+    
+    &_naming {
+      margin-top: -15px;
+
+      & li {
+        margin-bottom: 5px;
+        &:first-child {
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    &_cost .card-product__cost_item {
+      font-size: 1.714rem; 
+      color: #0F3978;
+      text-decoration: none;
+    }
+
+    & tr {
+      border-bottom: 1px dashed #D31473;
+
+      &:first-child {
+        border-bottom: 0;
+      }
+
+      &:last-child {        
+      border-bottom: 1px solid #D31473;
+      }
+    }
+
+    & th {
+      text-align: left;
+    }
+    & td {
+      margin-top: -15px;
+      padding: 15px;
+    }
+
+
+    &_img {
+      width: 215px;
+    }
+
+    & .table {
+     
+      &_num {
+        display: flex;
+
+        & input {
+          border: none;
+        }
+
+        &__item {
+          width: 40px;
+          height: 40px;
+          margin-right: 10px;
+          line-height: 40px;
+          background: #F7F7F7;
+          box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1);
+          border-radius: 6px;
+          text-align: center;
+          cursor: pointer;
+        }
+      }
+
+      &_title {
+        font-size: 1.143rem;
+        color: #989898;
+
+        & th {
+          padding-left: 15px;
+        }
+      }
+
+      &_delete {
+        cursor: pointer;
+      }
+    
+    }
+
+    & span {
+      display: block;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0 20px;
+    align-items: center;
+    background: #f7f7f7;
+    border-radius: 9px;
+
+    &_item {
+      padding: 38px 0;
+      font-size: 1.286rem;
+
+      & span {
+        font-weight: bold;
+      }
+
+      &:nth-child(2) {
+        font-size: 1.714rem;
+        font-weight: bold;
+
+        & span {
+          font-weight: normal;
+          color: #0F3978;
+        }
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+    }
+
+    & .buttom-normal {
+      margin: 0;
+    }
+  }
+
+  & h3 {
+    margin-bottom: 20px;
+    font-family: Book Antiqua;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
 }
+
+.form-step-2 {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 20px 0;
+  
+  &-anonim {
+    display: flex;
+    justify-content: space-between;
+    color: #0F3978;
+   
+  }
+
+  &-wrap {
+    align-self: stretch;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-top: 1px solid #D31473;
+    border-bottom: 1px solid #D31473;
+
+    & p {
+      font-size: 1.143rem;
+    }
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    & label {
+      display: flex;
+      flex-direction: column;
+      
+      margin-bottom: 5px;
+      color: #989898;
+    }
+
+    & input,
+    & textarea {
+      margin: 5px 0;
+      padding-left: 15px;
+      background: #F7F7F7;
+      box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+      border: 0;
+    }
+
+    & input {
+      height: 40px;
+    }
+    & textarea {
+      height: 110px;
+      padding-left: 0;
+    }
+  }
+}
+
+
+// radio
+.step-second,
+.step-third {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & .radio-wrap p {
+    max-width: 770px;
+    margin-left: 36px;
+    margin-bottom: 30px;
+    font-size: 1.143rem;
+  }
+}
+
+.step-third .radio + label:before {
+  top: 2px;
+}
+
+.step-third .radio + label:after {
+  top: 8px;
+  left: 6px;
+}
+
+.step-third label {
+  font-family: Book Antiqua;
+  font-size: 1.429rem;
+  font-weight: bold;
+}
+
+.step-third {
+
+  & h3 {
+    margin-bottom: 45px;
+  }
+
+  & .basket__bottom {
+    align-self: stretch;
+    background: inherit;
+    border-top: 1px solid #D31473;
+    border-radius: 0;
+
+    & .buttom-normal {
+      margin: 30px auto;
+    }
+  }
+  
+}
+
+// c
+
+.checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 20px;
+}
+.checkbox + label {
+	position: relative;
+	padding: 0 0 10px 30px;
+	cursor: pointer;
+}
+.checkbox + label:before {
+	content: '\2713';
+  color: transparent;
+  display: inline-block;
+	position: absolute;
+	top: -4px;
+	left: 0;
+	width: 24px;
+  height: 24px;
+  text-align: center;
+	background: #F7F7F7;
+	transition: .2s;
+}
+
+.checkbox:checked + label:before {
+  font-size: 22px;
+  color: #D31473;
+  padding-bottom: 2px;
+}
+// check
+
+.radio {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 7px;
+}
+.radio + label {
+	position: relative;
+	padding: 0 0 0 35px;
+	cursor: pointer;
+}
+.radio + label:before {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #D31473;
+	border-radius: 50%;
+	background: #FFF;
+}
+.radio + label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 7px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: #D31473;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+	opacity: 0;
+	transition: .2s;
+}
+.radio:checked + label:after {
+	opacity: 1;
+}
+
+
+.radio-wrap {
+  margin-bottom: 10px;
+}
+
+// radio-end

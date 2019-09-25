@@ -154,36 +154,238 @@
           <a class="basket__nav_step" href="#">2.Доставка</a>
           <a class="basket__nav_step" href="#">3.Корзина</a>
         </div>
+        
         <div class="basket__steps">
-          <div class="basket__steps_step">
-            <table width="100%">
-              <tr>
-                <th>Фото товара</th>
-                <th>Наименование</th>
-                <th>Количество</th>
-                <th>Стоимость</th>
+          <div class="basket__steps_step first-step" style="display: none">
+            <table class="basket__table">
+              <tr class="table_title"> 
+                <th class="table_td ">Фото товара</th>
+                <th class="table_td">Наименование</th>
+                <th class="table_td">Количество</th>
+                <th class="table_td">Стоимость</th>
               </tr>
-              <tr>
-                <td>
+
+              <tr class="table_row">
+
+                <td class="table_td basket__table_img">
                   <img src="img/basket/card-flower-4.jpg" alt="букет роз">
                 </td>
-                <td>
-                  <ul>
+                
+                <td class="table_td ">
+                  <ul class="basket__table_naming">
                     <li>Розы</li>
                     <li>Количество: 25 шт.</li>
                     <li>Размер: 80см</li>
                     <li>Цвет: красный</li>
-                  </ul>
+                  </ul> 
                 </td>
-                <td></td>
-                <td></td>
+
+                <td class="table_td basket__table_num">
+
+                  <div class="table_num">
+                    
+                      <div class="table_num__item bouquet-size__item">-</div>
+                      <input class="table_num__item bouquet-size__item" disabled>
+                      <div class="table_num__item bouquet-size__item">+</div>
+                   
+                  </div>
+                </td>
+  
+                <td class="basket__table_cost card-product__cost">
+
+                  <span class="card-product__cost_item">29 000 &#x20b8 </span>
+                  
+                </td>
+                <td class="table_delete">x</td>
               </tr>
-            </table>
+              <tr class="table_row">
+
+                <td class="table_td basket__table_img">
+                  <img src="img/basket/b.png" alt="букет роз">
+                </td>
+                
+                <td class="table_td ">
+                  <ul class="basket__table_naming">
+                    <li>Мишка Тедди</li>
+                    <li>Плюшевый медведь.</li>
+                    <li> Размер 120см</li>
+                  </ul> 
+                </td>
+
+                <td class="table_td basket__table_num">
+
+                  <div class="table_num">
+                    
+                      <div class="table_num__item bouquet-size__item">-</div>
+                      <input class="table_num__item bouquet-size__item" disabled>
+                      <div class="table_num__item bouquet-size__item">+</div>
+                   
+                  </div>
+                </td>
+  
+                <td class="basket__table_cost card-product__cost">
+
+                  <span class="card-product__cost_item">3 000 &#x20b8 </span>
+                  
+                </td>
+                <td>x</td>
+              </tr>
+
+            </table><!-- table end -->
+            
+            <div class="basket__bottom">
+              <div class="basket__bottom_item">
+                <p>Товаров на сумму: <span> 32 000 &#x20b8</span></p> 
+                <p>Стоимость доставки: <span>Бесплатно</span></p>
+              </div>
+              <div class="basket__bottom_item">
+                Итого к оплате: <span>32 000 &#x20b8</span>
+              </div>
+              <button class="buttom-normal">Оформить заказ</button>
+            </div>
+          </div><!-- step-first end -->
+
+          <div class="basket__steps_step step-second" style="display: none">
+            <h3>Выберите способ доставки</h3>
+
+           <div class="radio-button-wrap">
+              <div class="radio-wrap">
+                  <input type="radio" class="radio" id="radio" />
+                  <label for="radio">Самовывоз</label>
+              </div>
+  
+             <div class="radio-wrap">
+                <input type="radio" class="radio" id="radio1" />
+                <label for="radio1">Курьером</label>
+             </div>
+           </div>
+
+           <div class="form-step-2-wrap">
+           <p>
+              Доставка осуществляется в городах Алматы и Астана с 07:00 до 20:00 без выходных и праздничных дней.
+            </p>
+            <p>Доставка в городах Алматы и Астана бесплатная!</p>
+
+           <div class="form-step-2">
+
+             <div class="form-step-2__col">
+               <h3>Данные получателя</h3>
+
+               <label for="">
+                *Имя
+                <input type="text">
+               </label>
+               <label for="">
+                *Фамилия
+                <input type="text">
+               </label>
+               <label for="">
+                *Адрес получателя
+                <input type="text">
+               </label>
+               <label for="">
+                *Телефон
+                <input type="text">
+               </label>
+             </div>
+
+             <div class="form-step-2__col">
+               <h3>Данные отправителя</h3>
+               <label for="">
+                  *Имя
+                  <input type="text">
+                 </label>
+                 <label for="">
+                  *Фамилия
+                  <input type="text">
+                 </label>
+                 <label for="">
+                  *Адрес получателя
+                  <input type="text">
+                 </label>
+                 <label for="">
+                  *Телефон
+                  <input type="text">
+                 </label>
+             </div>
+
+             <div class="form-step-2__col">
+               <h3>Дополнительная информация</h3>
+               <label for="">
+                  Текст для открытки к заказу
+                  <textarea >
+
+                  </textarea>
+                 </label>
+                 <label for="">
+                  Комментарий к заказу
+                  <textarea >
+
+                  </textarea>
+                 </label>
+                
+             </div>
+           </div>
+
+           <div class="form-step-2-anonim">
+             <span>*Поля, обязательные для заполнения</span>
+            
+             <div class="check-box-wrap">
+                <input type="checkbox" class="checkbox" id="checkbox" />
+                <label for="checkbox">Отправить анонимно</label>
+             </div>
+           </div>
           </div>
-          <div class="basket__steps_step"></div>
-          <div class="basket__steps_step"></div>
-        </div>
-      </div>
+              <button class="buttom-normal">Далее</button>
+          </div>  <!-- step2end -->
+          
+          <div class="basket__steps_step step-third">
+            <h3>Выберите способ оплаты</h3>
+
+            <div class="radio-button-wrap">
+              <div class="radio-wrap">
+                  <input type="radio" class="radio" id="radio-3" />
+                  <label for="radio-3">Платежной картой</label>
+                  <p>
+                    Вы можете оплатить ваш заказ с помощью ПЛАСТИКОВОЙ КАРТЫ на нашем сайте в онлайн режиме. Оплата производится с помощью системы авторизации пластиковых карт E-pay банка Qazkom. Этот метод оплаты доступен для карт всех банков мира. Платеж может проводиться любой валюте. Конвертация будет произведена по курсу Национального Банка Республики Казахстан на момент транзакции.
+                  </p>
+              </div>
+  
+              <div class="radio-wrap">
+                <input type="radio" class="radio" id="radio-4" />
+                <label for="radio-4">Перевод на карты банков: Qazkom и Kaspi Bank</label>
+                <p>
+                  Вы можете оплатить Ваш заказ просто закинув необходимую сумму на карты Qazkom либо Kaspi Gold.
+                  <br>
+                  Это можно сделать любым удобным для вас способом: через терминалы банков, в кассах банков, через интернет банкинг выбрав перевод с карты на карту.
+                </p>
+              </div>
+
+              <div class="radio-wrap">
+                <input type="radio" class="radio" id="radio-5" />
+                <label for="radio-5">Безналичный расчет </label>
+                <p>
+                  По счету на оплату по предоставленным реквизитам. Заказ будет выполнен после поступления оплаты.
+                </p>
+              </div>
+
+              <div class="radio-wrap">
+                <input type="radio" class="radio" id="radio-6" />
+                <label for="radio-6">Наличными</label>
+                <p>Вы можете оплатить Ваш заказ наличными через касс в магазине.</p>
+              </div>
+            </div><!-- radio-btn-end -->
+            
+            <div class="basket__bottom">
+                <div class="buttom-normal">Оформить заказ</div>
+            </div>
+          </div>
+        </div>  
+        
+      </form>
+
+    </div>
+    </div>
       <!-- basket end -->
      
     </div>
