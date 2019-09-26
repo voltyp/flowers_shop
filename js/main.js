@@ -17,8 +17,8 @@ $(function() {
     autoplay: true,
     autoplaySpeed: 4000,
     arrows : true,
-    prevArrow: '.arrow-slider-right',
-    nextArrow:'.arrow-slider-left',
+    prevArrow: '.feedback-r',
+    nextArrow:'.feedback-l',
   });
 
   $('.slider-trust').slick({
