@@ -118,8 +118,7 @@ option:active,
   justify-content: space-between;
   align-content: center;
 }
-.top-header > div,
-.top-header > nav {
+.top-header-item {
   display: flex;
   align-items: center;
   text-align: center;
@@ -340,9 +339,6 @@ option:active,
 .banners-item {
   margin-left: 30px;
 }
-.banners-item:nth-child(n+2) {
-  align-self: flex-end;
-}
 .banners-item__text {
   position: relative;
   z-index: 1;
@@ -369,8 +365,8 @@ option:active,
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-width: 470px;
-  height: 470px;
+  flex: 1;
+  max-width: 470px;
   margin-left: 0px;
   background: url(../img/banner-1.jpg) no-repeat center;
   text-align: center;
@@ -378,6 +374,10 @@ option:active,
 .right-banners {
   display: flex;
   flex-wrap: wrap;
+  flex: 1;
+}
+.right-banners__bottom {
+  display: flex;
 }
 .separator {
   display: block;
@@ -387,6 +387,7 @@ option:active,
 .catalog {
   display: flex;
   flex-direction: column;
+  margin-bottom: 100px;
 }
 .catalog-menu {
   display: flex;
@@ -395,6 +396,9 @@ option:active,
 }
 .catalog-menu__item {
   margin-left: 44px;
+}
+.catalog-menu__item:first-child {
+  margin-left: 0;
 }
 .catalog-menu > .active {
   color: #D31473;
@@ -504,7 +508,7 @@ option:active,
 }
 .middle-action {
   display: flex;
-  flex: 1;
+  flex-grow: 1;
   margin-bottom: 60px;
   background: #F7F7F7;
   border-radius: 9px;
@@ -559,6 +563,7 @@ option:active,
   background: url('../img/review-bg.jpg') no-repeat center;
 }
 .wrap-review .block-header {
+  margin-bottom: 0;
   padding: 60px 0;
   color: #fff;
 }
@@ -751,6 +756,8 @@ option:active,
 .footer .container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 10px;
 }
 .footer__col {
   padding-bottom: 60px;
@@ -842,10 +849,13 @@ option:active,
   border: 1px solid #D31473;
   border-radius: 6px;
 }
+.catalog_page__products .catalog_page__products_menu_item {
+  margin-bottom: 10px;
+}
 .catalog_page__products .count-result {
-  float: right;
+  display: block;
   padding: 10px 0;
-  clear: both;
+  text-align: right;
 }
 .catalog_page__products .catalog-items__all {
   margin-top: 41px;
@@ -1407,6 +1417,49 @@ option:active,
   .card-product {
     width: 30%;
   }
+  .slick-arrow {
+    display: none!important;
+  }
+}
+@media (max-width: 1050px) {
+  .container {
+    padding: 0 5px;
+  }
+  .header-phones__number {
+    font-size: 1rem;
+    margin-left: 2px;
+  }
+  .header-whatsapp img {
+    width: 26px;
+  }
+  .middle-action__timer {
+    margin-top: 10px;
+  }
+  .middle-action .timer__title {
+    font-size: 28px;
+    white-space: nowrap;
+  }
+  .middle-action .timer__item {
+    font-size: 38px;
+  }
+}
+@media (max-width: 990px) {
+  .search-form {
+    display: none;
+  }
+  .middle-action {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 35px 0;
+  }
+  .middle-action__timer .timer {
+    order: -1;
+    min-width: 100%;
+    margin-bottom: 15px;
+  }
+  .card-product__img_text {
+    padding: 19px;
+  }
 }
 @media (max-width: 930px) {
   .card-product {
@@ -1414,18 +1467,65 @@ option:active,
     width: 29%;
   }
 }
+@media (max-width: 880px) {
+  .left-menu,
+  .time-delivery {
+    display: none;
+  }
+  .bottom-header {
+    padding: 10px;
+  }
+  .banners,
+  .main-menu,
+  .top-menu {
+    display: none;
+  }
+  .catalog_page__products .catalog_page__products_menu_item {
+    width: 190px;
+  }
+}
 @media (max-width: 840px) {
   .catalog-items {
     justify-content: center;
   }
 }
-@media (max-width: 860px) {
-  .card-product__img_text {
-    padding: 19px;
+@media (max-width: 730px) {
+  .midle-header {
+    justify-content: center;
+  }
+  .button-callback,
+  .main-slider__banner {
+    display: none;
+  }
+  .main-slider__text {
+    font-size: 2.35rem;
+  }
+  .slider-trust__item.slick-slide {
+    display: flex;
+    justify-content: center;
   }
 }
 @media (max-width: 565px) {
+  .catalog-menu {
+    display: none;
+  }
   .card-product {
     width: 56%;
+  }
+  .main-slider__text {
+    font-size: 1rem;
+  }
+  .middle-action .timer__title {
+    font-size: 23px;
+    white-space: nowrap;
+  }
+  .middle-action .timer__item {
+    font-size: 33px;
+  }
+}
+@media (max-width: 500px) {
+  .wrap-review,
+  .section-main-slider {
+    display: none;
   }
 }

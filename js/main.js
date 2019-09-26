@@ -31,6 +31,29 @@ $(function() {
     arrows : true,
     prevArrow: '.arrow-slider-right',
     nextArrow:'.arrow-slider-left',
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 730,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+    ]
   });
 
   $('.basket__steps_step').each(function(i, item) {

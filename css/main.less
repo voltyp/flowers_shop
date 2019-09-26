@@ -139,8 +139,7 @@ option:active, :hover, :focus {
   
 }
 
-.top-header > div,
-.top-header > nav {
+ .top-header-item {
   display: flex;
   align-items: center;
   text-align: center;
@@ -353,7 +352,7 @@ option:active, :hover, :focus {
 
 .main-slider {
   max-width: 100%;
-  // height: 480px;
+  // min-height: 480px;
   margin-bottom: 60px;
   overflow: hidden;
 
@@ -429,9 +428,7 @@ option:active, :hover, :focus {
   &-item {
     margin-left: 30px;
 
-    &:nth-child(n+2) {
-      align-self: flex-end;
-    }
+    
   }
 
   &-item__text {
@@ -464,8 +461,8 @@ option:active, :hover, :focus {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-width: 470px;
-  height: 470px;
+  flex: 1;
+  max-width: 470px;
   margin-left: 0px;
   background: url(../img/banner-1.jpg) no-repeat center;
   text-align: center;
@@ -474,6 +471,11 @@ option:active, :hover, :focus {
 .right-banners {
   display: flex;
   flex-wrap: wrap;
+  flex: 1;
+
+  &__bottom {
+    display: flex;
+  }
 }
 
 .separator {
@@ -486,13 +488,19 @@ option:active, :hover, :focus {
 .catalog {
   display: flex;
   flex-direction: column;
+  margin-bottom: 100px;
   
   &-menu {
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
+
     &__item {
       margin-left: 44px;
+
+      &:first-child {
+        margin-left: 0;
+      }
 
     }
 
@@ -632,7 +640,7 @@ option:active, :hover, :focus {
 // middle-action 
 .middle-action {
   display: flex;
-  flex: 1;
+  flex-grow: 1;
   margin-bottom: 60px;
   background: #F7F7F7;
   border-radius: 9px;
@@ -699,6 +707,7 @@ option:active, :hover, :focus {
   background: url('../img/review-bg.jpg') no-repeat center;
 
   & .block-header {
+    margin-bottom: 0;
     padding: 60px 0;
     color: #fff;
   }
@@ -941,6 +950,8 @@ option:active, :hover, :focus {
   & .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 10px;
   }
 
   &__col {
@@ -1065,10 +1076,14 @@ option:active, :hover, :focus {
     }
   }
 
+  & .catalog_page__products_menu_item {
+    margin-bottom: 10px;
+  }
+
   & .count-result {
-    float: right;
+    display: block;
     padding: 10px 0;
-    clear: both;
+    text-align: right;
   }
 
   & .catalog-items__all {
@@ -1778,6 +1793,57 @@ option:active, :hover, :focus {
   .card-product {
     width: 30%;
   }  
+  .slick-arrow {
+    display: none!important;
+  }
+}
+
+@media (max-width: 1050px) {
+
+  .container {
+    padding: 0 5px;
+  }
+
+  .header-phones__number {
+    font-size: 1rem;
+    margin-left: 2px;
+  }
+
+  .header-whatsapp img {
+    width: 26px;
+  }
+
+  .middle-action__timer {
+    margin-top: 10px;
+  }
+ 
+  .middle-action .timer__title {
+    font-size: 28px;
+    white-space: nowrap;
+  }
+  .middle-action .timer__item {
+    font-size: 38px
+  }
+}
+
+@media (max-width: 990px) {
+  .search-form {
+    display: none;
+  }
+  .middle-action {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 35px 0;
+  }
+  .middle-action__timer .timer {
+    order: -1;
+    min-width: 100%;
+    margin-bottom: 15px;
+  }
+  .card-product__img_text {
+    padding: 19px;
+  }
+
 }
 
 @media (max-width: 930px) {
@@ -1785,6 +1851,31 @@ option:active, :hover, :focus {
     min-width: 240px;
     width: 29%;
   }
+}
+@media (max-width: 880px) {
+  .left-menu,
+  .time-delivery {
+    display: none;
+  }
+  .bottom-header {
+    padding: 10px;
+  }
+
+  .banners,
+  .main-menu,
+  .top-menu {
+    display: none;
+  }
+
+  .catalog_page__products .catalog_page__products_menu_item {
+    width: 190px;
+  }
+
+}
+
+@media (max-width: 860px) {
+  
+
 }
 
 @media (max-width: 840px) {
@@ -1794,16 +1885,57 @@ option:active, :hover, :focus {
 
 }
 
-@media (max-width: 860px) {
-  .card-product__img_text {
-    padding: 19px;
+@media (max-width: 730px) {
+  .midle-header {
+    justify-content: center;
+  }
+
+  .button-callback,
+  .main-slider__banner {
+    display: none;
+  }
+
+  .main-slider__text {
+    font-size: 2.35rem;
+  }
+
+  .slider-trust__item.slick-slide {
+    display: flex;
+    justify-content: center;
   }
 
 }
+@media (max-width: 660px) {
+
+}
+
+
 
 @media (max-width: 565px) {
+  .catalog-menu {
+    display: none;
+  }
   .card-product {
     width: 56%;
   } 
 
+  .main-slider__text {
+    font-size: 1rem;
+  }
+
+  .middle-action .timer__title {
+    font-size: 23px;
+    white-space: nowrap;
+  }
+  .middle-action .timer__item {
+    font-size: 33px
+  }
+
+}
+
+@media (max-width: 500px) {
+  .wrap-review,
+  .section-main-slider {
+    display: none;
+  }
 }

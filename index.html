@@ -15,25 +15,25 @@
     <div class="container">
       <div class="top-header">
 
-        <div class="header-delivery">
+        <div class="header-delivery top-header-item">
           <a class="header-city" href="#">
             <img src="img/icon/icon_location.svg" alt="">
             <span>Алматы</span>
           </a>
         </div>
 
-        <div class="top-menu">
+        <div class="top-menu top-header-item">
           <a class="top-menu__item" href="#">Оплата и доставка</a>
           <a class="top-menu__item" href="#">О компании</a>
           <a class="top-menu__item" href="#">Оптовым покупателям</a>
           <a class="top-menu__item" href="#">Контакты</a>
         </div>
 
-        <div class="search-form">
+        <div class="search-form top-header-item">
           <img src="img/icon/icon_search.svg" alt="search">
         </div>
 
-        <div class="header-phones">
+        <div class="header-phones top-header-item">
           <a class="header-whatsapp" href="/">
           <img src="img/icon/Icon_WhatsUp.svg" alt="whatsaap">
           </a>
@@ -73,9 +73,11 @@
   <section class="sticky-menu">
       <div class="container">
         <div class="bottom-header">
+          
+          <img src="img/icon/icon_burger.svg" alt="">
+          
           <nav class="main-menu">
             <div class="main-menu__item">
-              <img src="img/icon/icon_burger.svg" alt="">
               <a href="card-product.html" class="main-menu__link">Каталог цветов</a>
             </div>
   
@@ -176,7 +178,7 @@
       </div>
   </section>
 <!-- header-end -->
-  <section>
+  <section class="section-main-slider">
       <div class="container">
         <div class="wrap-main-slider">
           <div class="main-slider__banner">
@@ -185,7 +187,7 @@
               по г. Алматы/Нур-Султан
             </div>
             <div class="main-slider__banner_item">
-                Удобные способы оплаты Visa, Master Card, наличные
+              Удобные способы оплаты Visa, Master Card, наличные
             </div>
           </div>
           <div class="main-slider">
@@ -235,12 +237,14 @@
         <a href="#" class="banners-item">
           <img src="img/banner-2.jpg" alt="">
         </a>
-        <a href="#" class="banners-item">
-            <img src="img/banner-3.jpg" alt="">
-        </a>
-        <a href="#" class="banners-item">
-            <img src="img/banner_4.jpg" alt="">
-        </a>
+        <div class="right-banners__bottom">
+            <a href="#" class="banners-item">
+                <img src="img/banner-3.jpg" alt="">
+            </a>
+            <a href="#" class="banners-item">
+                <img src="img/banner_4.jpg" alt="">
+            </a>
+        </div>
       </div>
     </div>
   </section>
@@ -265,260 +269,260 @@
 
         <div class="catalog-items">
 
-          <div class="catalog-items__action">
-            <div class="card-product">
+          
+          <div class="card-product">
 
-              <div class="card-product__img">
-                <img src="img/card-flower.jpg" alt="">
-                <div class="card-product__action">Акция</div>
-                <span class="card-product__img_text">
-                  Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
-                </span>
-                <div class="card-product__img_bg"></div>
-              </div>
-              <!-- catalog-items__img-end -->
-              <h3 class="card-product__title">
-                Лакомка
-              </h3>
-              <!-- catalog-items__title-end -->
-  
-              <div class="card-product__cost">
-                <span class="card-product__cost_item">5200 &#x20b8;</span>
-                <span class="card-product__cost_item">1200 &#x20b8;</span>
-              </div>
-              <!-- catalog-items__cost-end -->
-  
-              <a href="#" class="card-product__link">
-                Купить в один клик
-              </a>
-              <!-- catalog-items__link-end -->
-  
-              <div class="card-product__timer timer" >
-                <div class="timer__title">До конца акции осталось</div>
-                <div class="timer__counter ">
-                  <div class="timer__item timer__days">
-                    12
-                    <span class="timer__item_description">Дней</span>
-                  </div>
-                  <span>:</span>
-                  <div class="timer__item timer__hours">
-                    07
-                    <span class="timer__item_description">Часов</span>
-                  </div>
-                  <span>:</span>
-                  <div class="timer__item timer__minutes">
-                    08
-                    <span class="timer__item_description">Минут</span>
-                  </div>
-                  <span>:</span>
-                  <div class="timer__item timer__seconds">
-                    30 
-                    <span class="timer__item_description">Секунд</span>
-                  </div>
+            <div class="card-product__img">
+              <img src="img/card-flower.jpg" alt="">
+              <div class="card-product__action">Акция</div>
+              <span class="card-product__img_text">
+                Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
+              </span>
+              <div class="card-product__img_bg"></div>
+            </div>
+            <!-- catalog-items__img-end -->
+            <h3 class="card-product__title">
+              Лакомка
+            </h3>
+            <!-- catalog-items__title-end -->
+
+            <div class="card-product__cost">
+              <span class="card-product__cost_item">5200 &#x20b8;</span>
+              <span class="card-product__cost_item">1200 &#x20b8;</span>
+            </div>
+            <!-- catalog-items__cost-end -->
+
+            <a href="#" class="card-product__link">
+              Купить в один клик
+            </a>
+            <!-- catalog-items__link-end -->
+
+            <div class="card-product__timer timer" >
+              <div class="timer__title">До конца акции осталось</div>
+              <div class="timer__counter ">
+                <div class="timer__item timer__days">
+                  12
+                  <span class="timer__item_description">Дней</span>
+                </div>
+                <span>:</span>
+                <div class="timer__item timer__hours">
+                  07
+                  <span class="timer__item_description">Часов</span>
+                </div>
+                <span>:</span>
+                <div class="timer__item timer__minutes">
+                  08
+                  <span class="timer__item_description">Минут</span>
+                </div>
+                <span>:</span>
+                <div class="timer__item timer__seconds">
+                  30 
+                  <span class="timer__item_description">Секунд</span>
                 </div>
               </div>
-              <!-- catalog-items__timer-end -->
-  
-              <div class="card-product__button">
-                <svg viewBox="0 0 30 30">
-                  <use xlink:href="#basket"/>
-                </svg>
-  
-                Добавить в корзину
-              </div>
-              <!-- catalog-items__button-end -->
-  
             </div>
-            <div class="card-product">
+            <!-- catalog-items__timer-end -->
 
-              <div class="card-product__img">
-                <img src="img/card-flower-2.jpg" alt="">
-                <div class="card-product__action">Акция</div>
-                <span class="card-product__img_text">
-                  Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
-                </span>
-                <div class="card-product__img_bg"></div>
-              </div>
-              <!-- catalog-items__img-end -->
-              <h3 class="card-product__title">
-                Лакомка
-              </h3>
-              <!-- catalog-items__title-end -->
-  
-              <div class="card-product__cost">
-                <span class="card-product__cost_item">5200 &#x20b8;</span>
-                <span class="card-product__cost_item">1200 &#x20b8;</span>
-              </div>
-              <!-- catalog-items__cost-end -->
-  
-              <a href="#" class="card-product__link">
-                Купить в один клик
-              </a>
-              <!-- catalog-items__link-end -->
-  
-              <div class="card-product__timer timer" >
-                <div class="timer__title">До конца акции осталось</div>
-                <div class="timer__counter ">
-                  <div class="timer__item timer__days">
-                    12
-                    <span class="timer__item_description">Дней</span>
-                  </div>
-                  <span>:</span>
-                  <div class="timer__item timer__hours">
-                    07
-                    <span class="timer__item_description">Часов</span>
-                  </div>
-                  <span>:</span>
-                  <div class="timer__item timer__minutes">
-                    08
-                    <span class="timer__item_description">Минут</span>
-                  </div>
-                  <span>:</span>
-                  <div class="timer__item timer__seconds">
-                    30 
-                    <span class="timer__item_description">Секунд</span>
-                  </div>
-                </div>
-              </div>
-              <!-- catalog-items__timer-end -->
-  
-              <div class="card-product__button">
-                <svg viewBox="0 0 30 30">
-                  <use xlink:href="#basket"/>
-                </svg>
-  
-                Добавить в корзину
-              </div>
-              <!-- catalog-items__button-end -->
-  
-            </div>
-            <div class="card-product">
+            <div class="card-product__button">
+              <svg viewBox="0 0 30 30">
+                <use xlink:href="#basket"/>
+              </svg>
 
-              <div class="card-product__img">
-                <img src="img/card-flower-3.jpg" alt="">
-                <div class="card-product__action">Акция</div>
-                <span class="card-product__img_text">
-                  Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
-                </span>
-                <div class="card-product__img_bg"></div>
-              </div>
-              <!-- catalog-items__img-end -->
-              <h3 class="card-product__title">
-                Лакомка
-              </h3>
-              <!-- catalog-items__title-end -->
-  
-              <div class="card-product__cost">
-                <span class="card-product__cost_item">5200 &#x20b8;</span>
-                <span class="card-product__cost_item">1200 &#x20b8;</span>
-              </div>
-              <!-- catalog-items__cost-end -->
-  
-              <a href="#" class="card-product__link">
-                Купить в один клик
-              </a>
-              <!-- catalog-items__link-end -->
-  
-              <div class="card-product__timer timer" >
-                <div class="timer__title">До конца акции осталось</div>
-                <div class="timer__counter ">
-                  <div class="timer__item timer__days">
-                    12
-                    <span class="timer__item_description">Дней</span>
-                  </div>
-                  <span>:</span>
-                  <div class="timer__item timer__hours">
-                    07
-                    <span class="timer__item_description">Часов</span>
-                  </div>
-                  <span>:</span>
-                  <div class="timer__item timer__minutes">
-                    08
-                    <span class="timer__item_description">Минут</span>
-                  </div>
-                  <span>:</span>
-                  <div class="timer__item timer__seconds">
-                    30 
-                    <span class="timer__item_description">Секунд</span>
-                  </div>
-                </div>
-              </div>
-              <!-- catalog-items__timer-end -->
-  
-              <div class="card-product__button">
-                <svg viewBox="0 0 30 30">
-                  <use xlink:href="#basket"/>
-                </svg>
-  
-                Добавить в корзину
-              </div>
-              <!-- catalog-items__button-end -->
-  
+              Добавить в корзину
             </div>
-            <div class="card-product">
+            <!-- catalog-items__button-end -->
 
-              <div class="card-product__img">
-                <img src="img/card-flower.jpg" alt="">
-                <div class="card-product__action">Акция</div>
-                <span class="card-product__img_text">
-                  Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
-                </span>
-                <div class="card-product__img_bg"></div>
-              </div>
-              <!-- catalog-items__img-end -->
-              <h3 class="card-product__title">
-                Лакомка
-              </h3>
-              <!-- catalog-items__title-end -->
-  
-              <div class="card-product__cost">
-                <span class="card-product__cost_item">5200 &#x20b8;</span>
-                <span class="card-product__cost_item">1200 &#x20b8;</span>
-              </div>
-              <!-- catalog-items__cost-end -->
-  
-              <a href="#" class="card-product__link">
-                Купить в один клик
-              </a>
-              <!-- catalog-items__link-end -->
-  
-              <div class="card-product__timer timer" >
-                <div class="timer__title">До конца акции осталось</div>
-                <div class="timer__counter ">
-                  <div class="timer__item timer__days">
-                    12
-                    <span class="timer__item_description">Дней</span>
-                  </div>
-                  <span>:</span>
-                  <div class="timer__item timer__hours">
-                    07
-                    <span class="timer__item_description">Часов</span>
-                  </div>
-                  <span>:</span>
-                  <div class="timer__item timer__minutes">
-                    08
-                    <span class="timer__item_description">Минут</span>
-                  </div>
-                  <span>:</span>
-                  <div class="timer__item timer__seconds">
-                    30 
-                    <span class="timer__item_description">Секунд</span>
-                  </div>
-                </div>
-              </div>
-              <!-- catalog-items__timer-end -->
-  
-              <div class="card-product__button">
-                <svg viewBox="0 0 30 30">
-                  <use xlink:href="#basket"/>
-                </svg>
-  
-                Добавить в корзину
-              </div>
-              <!-- catalog-items__button-end -->
-  
-            </div>
           </div>
+          <div class="card-product">
+
+            <div class="card-product__img">
+              <img src="img/card-flower-2.jpg" alt="">
+              <div class="card-product__action">Акция</div>
+              <span class="card-product__img_text">
+                Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
+              </span>
+              <div class="card-product__img_bg"></div>
+            </div>
+            <!-- catalog-items__img-end -->
+            <h3 class="card-product__title">
+              Лакомка
+            </h3>
+            <!-- catalog-items__title-end -->
+
+            <div class="card-product__cost">
+              <span class="card-product__cost_item">5200 &#x20b8;</span>
+              <span class="card-product__cost_item">1200 &#x20b8;</span>
+            </div>
+            <!-- catalog-items__cost-end -->
+
+            <a href="#" class="card-product__link">
+              Купить в один клик
+            </a>
+            <!-- catalog-items__link-end -->
+
+            <div class="card-product__timer timer" >
+              <div class="timer__title">До конца акции осталось</div>
+              <div class="timer__counter ">
+                <div class="timer__item timer__days">
+                  12
+                  <span class="timer__item_description">Дней</span>
+                </div>
+                <span>:</span>
+                <div class="timer__item timer__hours">
+                  07
+                  <span class="timer__item_description">Часов</span>
+                </div>
+                <span>:</span>
+                <div class="timer__item timer__minutes">
+                  08
+                  <span class="timer__item_description">Минут</span>
+                </div>
+                <span>:</span>
+                <div class="timer__item timer__seconds">
+                  30 
+                  <span class="timer__item_description">Секунд</span>
+                </div>
+              </div>
+            </div>
+            <!-- catalog-items__timer-end -->
+
+            <div class="card-product__button">
+              <svg viewBox="0 0 30 30">
+                <use xlink:href="#basket"/>
+              </svg>
+
+              Добавить в корзину
+            </div>
+            <!-- catalog-items__button-end -->
+
+          </div>
+          <div class="card-product">
+
+            <div class="card-product__img">
+              <img src="img/card-flower-3.jpg" alt="">
+              <div class="card-product__action">Акция</div>
+              <span class="card-product__img_text">
+                Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
+              </span>
+              <div class="card-product__img_bg"></div>
+            </div>
+            <!-- catalog-items__img-end -->
+            <h3 class="card-product__title">
+              Лакомка
+            </h3>
+            <!-- catalog-items__title-end -->
+
+            <div class="card-product__cost">
+              <span class="card-product__cost_item">5200 &#x20b8;</span>
+              <span class="card-product__cost_item">1200 &#x20b8;</span>
+            </div>
+            <!-- catalog-items__cost-end -->
+
+            <a href="#" class="card-product__link">
+              Купить в один клик
+            </a>
+            <!-- catalog-items__link-end -->
+
+            <div class="card-product__timer timer" >
+              <div class="timer__title">До конца акции осталось</div>
+              <div class="timer__counter ">
+                <div class="timer__item timer__days">
+                  12
+                  <span class="timer__item_description">Дней</span>
+                </div>
+                <span>:</span>
+                <div class="timer__item timer__hours">
+                  07
+                  <span class="timer__item_description">Часов</span>
+                </div>
+                <span>:</span>
+                <div class="timer__item timer__minutes">
+                  08
+                  <span class="timer__item_description">Минут</span>
+                </div>
+                <span>:</span>
+                <div class="timer__item timer__seconds">
+                  30 
+                  <span class="timer__item_description">Секунд</span>
+                </div>
+              </div>
+            </div>
+            <!-- catalog-items__timer-end -->
+
+            <div class="card-product__button">
+              <svg viewBox="0 0 30 30">
+                <use xlink:href="#basket"/>
+              </svg>
+
+              Добавить в корзину
+            </div>
+            <!-- catalog-items__button-end -->
+
+          </div>
+          <div class="card-product">
+
+            <div class="card-product__img">
+              <img src="img/card-flower.jpg" alt="">
+              <div class="card-product__action">Акция</div>
+              <span class="card-product__img_text">
+                Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
+              </span>
+              <div class="card-product__img_bg"></div>
+            </div>
+            <!-- catalog-items__img-end -->
+            <h3 class="card-product__title">
+              Лакомка
+            </h3>
+            <!-- catalog-items__title-end -->
+
+            <div class="card-product__cost">
+              <span class="card-product__cost_item">5200 &#x20b8;</span>
+              <span class="card-product__cost_item">1200 &#x20b8;</span>
+            </div>
+            <!-- catalog-items__cost-end -->
+
+            <a href="#" class="card-product__link">
+              Купить в один клик
+            </a>
+            <!-- catalog-items__link-end -->
+
+            <div class="card-product__timer timer" >
+              <div class="timer__title">До конца акции осталось</div>
+              <div class="timer__counter ">
+                <div class="timer__item timer__days">
+                  12
+                  <span class="timer__item_description">Дней</span>
+                </div>
+                <span>:</span>
+                <div class="timer__item timer__hours">
+                  07
+                  <span class="timer__item_description">Часов</span>
+                </div>
+                <span>:</span>
+                <div class="timer__item timer__minutes">
+                  08
+                  <span class="timer__item_description">Минут</span>
+                </div>
+                <span>:</span>
+                <div class="timer__item timer__seconds">
+                  30 
+                  <span class="timer__item_description">Секунд</span>
+                </div>
+              </div>
+            </div>
+            <!-- catalog-items__timer-end -->
+
+            <div class="card-product__button">
+              <svg viewBox="0 0 30 30">
+                <use xlink:href="#basket"/>
+              </svg>
+
+              Добавить в корзину
+            </div>
+            <!-- catalog-items__button-end -->
+
+          </div>
+          
           <!-- card-product one end -->
 
           <div class="middle-action">
@@ -562,314 +566,314 @@
           </div>
           <!-- middle-action-end -->
 
-          <div class="catalog-items__all">
-            <div class="card-product">
+          
+          <div class="card-product">
 
-              <div class="card-product__img">
-                <img src="img/card-flower.jpg" alt="">
-                <div class="card-product__action day">Букет дня</div>
-                <span class="card-product__img_text">
-                  Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
-                </span>
-                <div class="card-product__img_bg"></div>
-              </div>
-              <!-- catalog-items__img-end -->
-              <h3 class="card-product__title">
-                Цветочная нимфа
-              </h3>
-              <!-- catalog-items__title-end -->
-  
-              <div class="card-product__cost">
-                <span class="card-product__cost_item">5200 &#x20b8;</span>
-                <span class="card-product__cost_item">1200 &#x20b8;</span>
-              </div>
-              <!-- catalog-items__cost-end -->
-  
-              <a href="#" class="card-product__link">
-                Купить в один клик
-              </a>
-              <!-- catalog-items__link-end -->
-  
-              <div class="card-product__button">
-                <svg viewBox="0 0 30 30">
-                  <use xlink:href="#basket"/>
-                </svg>
-  
-                Добавить в корзину
-              </div>
-              <!-- catalog-items__button-end -->
-  
+            <div class="card-product__img">
+              <img src="img/card-flower.jpg" alt="">
+              <div class="card-product__action day">Букет дня</div>
+              <span class="card-product__img_text">
+                Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
+              </span>
+              <div class="card-product__img_bg"></div>
             </div>
-            <!-- card-product two end -->
-            <div class="card-product">
-  
-              <div class="card-product__img">
-                <img src="img/card-flower-2.jpg" alt="">
-                <div class="card-product__action day">Букет дня</div>
-                <span class="card-product__img_text">
-                  Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
-                </span>
-                <div class="card-product__img_bg"></div>
-              </div>
-              <!-- catalog-items__img-end -->
-              <h3 class="card-product__title">
-                Цветочная нимфа
-              </h3>
-              <!-- catalog-items__title-end -->
-  
-              <div class="card-product__cost">
-                <span class="card-product__cost_item">5200 &#x20b8;</span>
-                <span class="card-product__cost_item">1200 &#x20b8;</span>
-              </div>
-              <!-- catalog-items__cost-end -->
-  
-              <a href="#" class="card-product__link">
-                Купить в один клик
-              </a>
-              <!-- catalog-items__link-end -->
-  
-              <div class="card-product__button">
-                <svg viewBox="0 0 30 30">
-                  <use xlink:href="#basket"/>
-                </svg>
-  
-                Добавить в корзину
-              </div>
-              <!-- catalog-items__button-end -->
-  
-            </div>
-            <!-- card-product two end -->
-            <div class="card-product">
-  
-              <div class="card-product__img">
-                <img src="img/card-flower-3.jpg" alt="">
-                <div class="card-product__action day">Букет дня</div>
-                <span class="card-product__img_text">
-                  Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
-                </span>
-                <div class="card-product__img_bg"></div>
-              </div>
-              <!-- catalog-items__img-end -->
-              <h3 class="card-product__title">
-                Цветочная нимфа
-              </h3>
-              <!-- catalog-items__title-end -->
-  
-              <div class="card-product__cost">
-                <span class="card-product__cost_item">5200 &#x20b8;</span>
-                <span class="card-product__cost_item">1200 &#x20b8;</span>
-              </div>
-              <!-- catalog-items__cost-end -->
-  
-              <a href="#" class="card-product__link">
-                Купить в один клик
-              </a>
-              <!-- catalog-items__link-end -->
-  
-              <div class="card-product__button">
-                <svg viewBox="0 0 30 30">
-                  <use xlink:href="#basket"/>
-                </svg>
-  
-                Добавить в корзину
-              </div>
-              <!-- catalog-items__button-end -->
-  
-            </div>
-            <!-- card-product two end -->
-            <div class="card-product">
-  
-              <div class="card-product__img">
-                <img src="img/card-flower-4.jpg" alt="">
-                <div class="card-product__action day">Букет дня</div>
-                <span class="card-product__img_text">
-                  Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
-                </span>
-                <div class="card-product__img_bg"></div>
-              </div>
-              <!-- catalog-items__img-end -->
-              <h3 class="card-product__title">
-                Цветочная нимфа
-              </h3>
-              <!-- catalog-items__title-end -->
-  
-              <div class="card-product__cost">
-                <span class="card-product__cost_item">5200 &#x20b8;</span>
-                <span class="card-product__cost_item">1200 &#x20b8;</span>
-              </div>
-              <!-- catalog-items__cost-end -->
-  
-              <a href="#" class="card-product__link">
-                Купить в один клик
-              </a>
-              <!-- catalog-items__link-end -->
-  
-              <div class="card-product__button">
-                <svg viewBox="0 0 30 30">
-                  <use xlink:href="#basket"/>
-                </svg>
-  
-                Добавить в корзину
-              </div>
-              <!-- catalog-items__button-end -->
-  
-            </div>
-            <!-- card-product two end -->
-            
-            <!-- ///// -->
-            <div class="card-product">
+            <!-- catalog-items__img-end -->
+            <h3 class="card-product__title">
+              Цветочная нимфа
+            </h3>
+            <!-- catalog-items__title-end -->
 
-              <div class="card-product__img">
-                <img src="img/card-flower-2.jpg" alt="">
-                <div class="card-product__action day">Букет дня</div>
-                <span class="card-product__img_text">
-                  Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
-                </span>
-                <div class="card-product__img_bg"></div>
-              </div>
-              <!-- catalog-items__img-end -->
-              <h3 class="card-product__title">
-                Цветочная нимфа
-              </h3>
-              <!-- catalog-items__title-end -->
-  
-              <div class="card-product__cost">
-                <span class="card-product__cost_item">5200 &#x20b8;</span>
-                <span class="card-product__cost_item">1200 &#x20b8;</span>
-              </div>
-              <!-- catalog-items__cost-end -->
-  
-              <a href="#" class="card-product__link">
-                Купить в один клик
-              </a>
-              <!-- catalog-items__link-end -->
-  
-              <div class="card-product__button">
-                <svg viewBox="0 0 30 30">
-                  <use xlink:href="#basket"/>
-                </svg>
-  
-                Добавить в корзину
-              </div>
-              <!-- catalog-items__button-end -->
-  
+            <div class="card-product__cost">
+              <span class="card-product__cost_item">5200 &#x20b8;</span>
+              <span class="card-product__cost_item">1200 &#x20b8;</span>
             </div>
-            <!-- card-product two end -->
-            <div class="card-product">
-  
-              <div class="card-product__img">
-                <img src="img/card-flower-4.jpg" alt="">
-                <div class="card-product__action day">Букет дня</div>
-                <span class="card-product__img_text">
-                  Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
-                </span>
-                <div class="card-product__img_bg"></div>
-              </div>
-              <!-- catalog-items__img-end -->
-              <h3 class="card-product__title">
-                Цветочная нимфа
-              </h3>
-              <!-- catalog-items__title-end -->
-  
-              <div class="card-product__cost">
-                <span class="card-product__cost_item">5200 &#x20b8;</span>
-                <span class="card-product__cost_item">1200 &#x20b8;</span>
-              </div>
-              <!-- catalog-items__cost-end -->
-  
-              <a href="#" class="card-product__link">
-                Купить в один клик
-              </a>
-              <!-- catalog-items__link-end -->
-  
-              <div class="card-product__button">
-                <svg viewBox="0 0 30 30">
-                  <use xlink:href="#basket"/>
-                </svg>
-  
-                Добавить в корзину
-              </div>
-              <!-- catalog-items__button-end -->
-  
+            <!-- catalog-items__cost-end -->
+
+            <a href="#" class="card-product__link">
+              Купить в один клик
+            </a>
+            <!-- catalog-items__link-end -->
+
+            <div class="card-product__button">
+              <svg viewBox="0 0 30 30">
+                <use xlink:href="#basket"/>
+              </svg>
+
+              Добавить в корзину
             </div>
-            <!-- card-product two end -->
-            <div class="card-product">
-  
-              <div class="card-product__img">
-                <img src="img/card-flower.jpg" alt="">
-                <div class="card-product__action day">Букет дня</div>
-                <span class="card-product__img_text">
-                  Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
-                </span>
-                <div class="card-product__img_bg"></div>
-              </div>
-              <!-- catalog-items__img-end -->
-              <h3 class="card-product__title">
-                Цветочная нимфа
-              </h3>
-              <!-- catalog-items__title-end -->
-  
-              <div class="card-product__cost">
-                <span class="card-product__cost_item">5200 &#x20b8;</span>
-                <span class="card-product__cost_item">1200 &#x20b8;</span>
-              </div>
-              <!-- catalog-items__cost-end -->
-  
-              <a href="#" class="card-product__link">
-                Купить в один клик
-              </a>
-              <!-- catalog-items__link-end -->
-  
-              <div class="card-product__button">
-                <svg viewBox="0 0 30 30">
-                  <use xlink:href="#basket"/>
-                </svg>
-  
-                Добавить в корзину
-              </div>
-              <!-- catalog-items__button-end -->
-  
-            </div>
-            <!-- card-product two end -->
-            <div class="card-product">
-  
-              <div class="card-product__img">
-                <img src="img/card-flower-3.jpg" alt="">
-                <div class="card-product__action day">Букет дня</div>
-                <span class="card-product__img_text">
-                  Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
-                </span>
-                <div class="card-product__img_bg"></div>
-              </div>
-              <!-- catalog-items__img-end -->
-              <h3 class="card-product__title">
-                Цветочная нимфа
-              </h3>
-              <!-- catalog-items__title-end -->
-  
-              <div class="card-product__cost">
-                <span class="card-product__cost_item">5200 &#x20b8;</span>
-                <span class="card-product__cost_item">1200 &#x20b8;</span>
-              </div>
-              <!-- catalog-items__cost-end -->
-  
-              <a href="#" class="card-product__link">
-                Купить в один клик
-              </a>
-              <!-- catalog-items__link-end -->
-  
-              <div class="card-product__button">
-                <svg viewBox="0 0 30 30">
-                  <use xlink:href="#basket"/>
-                </svg>
-  
-                Добавить в корзину
-              </div>
-              <!-- catalog-items__button-end -->
-  
-            </div>
-            <!-- card-product two end -->
+            <!-- catalog-items__button-end -->
+
           </div>
+          <!-- card-product two end -->
+          <div class="card-product">
+
+            <div class="card-product__img">
+              <img src="img/card-flower-2.jpg" alt="">
+              <div class="card-product__action day">Букет дня</div>
+              <span class="card-product__img_text">
+                Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
+              </span>
+              <div class="card-product__img_bg"></div>
+            </div>
+            <!-- catalog-items__img-end -->
+            <h3 class="card-product__title">
+              Цветочная нимфа
+            </h3>
+            <!-- catalog-items__title-end -->
+
+            <div class="card-product__cost">
+              <span class="card-product__cost_item">5200 &#x20b8;</span>
+              <span class="card-product__cost_item">1200 &#x20b8;</span>
+            </div>
+            <!-- catalog-items__cost-end -->
+
+            <a href="#" class="card-product__link">
+              Купить в один клик
+            </a>
+            <!-- catalog-items__link-end -->
+
+            <div class="card-product__button">
+              <svg viewBox="0 0 30 30">
+                <use xlink:href="#basket"/>
+              </svg>
+
+              Добавить в корзину
+            </div>
+            <!-- catalog-items__button-end -->
+
+          </div>
+          <!-- card-product two end -->
+          <div class="card-product">
+
+            <div class="card-product__img">
+              <img src="img/card-flower-3.jpg" alt="">
+              <div class="card-product__action day">Букет дня</div>
+              <span class="card-product__img_text">
+                Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
+              </span>
+              <div class="card-product__img_bg"></div>
+            </div>
+            <!-- catalog-items__img-end -->
+            <h3 class="card-product__title">
+              Цветочная нимфа
+            </h3>
+            <!-- catalog-items__title-end -->
+
+            <div class="card-product__cost">
+              <span class="card-product__cost_item">5200 &#x20b8;</span>
+              <span class="card-product__cost_item">1200 &#x20b8;</span>
+            </div>
+            <!-- catalog-items__cost-end -->
+
+            <a href="#" class="card-product__link">
+              Купить в один клик
+            </a>
+            <!-- catalog-items__link-end -->
+
+            <div class="card-product__button">
+              <svg viewBox="0 0 30 30">
+                <use xlink:href="#basket"/>
+              </svg>
+
+              Добавить в корзину
+            </div>
+            <!-- catalog-items__button-end -->
+
+          </div>
+          <!-- card-product two end -->
+          <div class="card-product">
+
+            <div class="card-product__img">
+              <img src="img/card-flower-4.jpg" alt="">
+              <div class="card-product__action day">Букет дня</div>
+              <span class="card-product__img_text">
+                Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
+              </span>
+              <div class="card-product__img_bg"></div>
+            </div>
+            <!-- catalog-items__img-end -->
+            <h3 class="card-product__title">
+              Цветочная нимфа
+            </h3>
+            <!-- catalog-items__title-end -->
+
+            <div class="card-product__cost">
+              <span class="card-product__cost_item">5200 &#x20b8;</span>
+              <span class="card-product__cost_item">1200 &#x20b8;</span>
+            </div>
+            <!-- catalog-items__cost-end -->
+
+            <a href="#" class="card-product__link">
+              Купить в один клик
+            </a>
+            <!-- catalog-items__link-end -->
+
+            <div class="card-product__button">
+              <svg viewBox="0 0 30 30">
+                <use xlink:href="#basket"/>
+              </svg>
+
+              Добавить в корзину
+            </div>
+            <!-- catalog-items__button-end -->
+
+          </div>
+          <!-- card-product two end -->
+          
+          <!-- ///// -->
+          <div class="card-product">
+
+            <div class="card-product__img">
+              <img src="img/card-flower-2.jpg" alt="">
+              <div class="card-product__action day">Букет дня</div>
+              <span class="card-product__img_text">
+                Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
+              </span>
+              <div class="card-product__img_bg"></div>
+            </div>
+            <!-- catalog-items__img-end -->
+            <h3 class="card-product__title">
+              Цветочная нимфа
+            </h3>
+            <!-- catalog-items__title-end -->
+
+            <div class="card-product__cost">
+              <span class="card-product__cost_item">5200 &#x20b8;</span>
+              <span class="card-product__cost_item">1200 &#x20b8;</span>
+            </div>
+            <!-- catalog-items__cost-end -->
+
+            <a href="#" class="card-product__link">
+              Купить в один клик
+            </a>
+            <!-- catalog-items__link-end -->
+
+            <div class="card-product__button">
+              <svg viewBox="0 0 30 30">
+                <use xlink:href="#basket"/>
+              </svg>
+
+              Добавить в корзину
+            </div>
+            <!-- catalog-items__button-end -->
+
+          </div>
+          <!-- card-product two end -->
+          <div class="card-product">
+
+            <div class="card-product__img">
+              <img src="img/card-flower-4.jpg" alt="">
+              <div class="card-product__action day">Букет дня</div>
+              <span class="card-product__img_text">
+                Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
+              </span>
+              <div class="card-product__img_bg"></div>
+            </div>
+            <!-- catalog-items__img-end -->
+            <h3 class="card-product__title">
+              Цветочная нимфа
+            </h3>
+            <!-- catalog-items__title-end -->
+
+            <div class="card-product__cost">
+              <span class="card-product__cost_item">5200 &#x20b8;</span>
+              <span class="card-product__cost_item">1200 &#x20b8;</span>
+            </div>
+            <!-- catalog-items__cost-end -->
+
+            <a href="#" class="card-product__link">
+              Купить в один клик
+            </a>
+            <!-- catalog-items__link-end -->
+
+            <div class="card-product__button">
+              <svg viewBox="0 0 30 30">
+                <use xlink:href="#basket"/>
+              </svg>
+
+              Добавить в корзину
+            </div>
+            <!-- catalog-items__button-end -->
+
+          </div>
+          <!-- card-product two end -->
+          <div class="card-product">
+
+            <div class="card-product__img">
+              <img src="img/card-flower.jpg" alt="">
+              <div class="card-product__action day">Букет дня</div>
+              <span class="card-product__img_text">
+                Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
+              </span>
+              <div class="card-product__img_bg"></div>
+            </div>
+            <!-- catalog-items__img-end -->
+            <h3 class="card-product__title">
+              Цветочная нимфа
+            </h3>
+            <!-- catalog-items__title-end -->
+
+            <div class="card-product__cost">
+              <span class="card-product__cost_item">5200 &#x20b8;</span>
+              <span class="card-product__cost_item">1200 &#x20b8;</span>
+            </div>
+            <!-- catalog-items__cost-end -->
+
+            <a href="#" class="card-product__link">
+              Купить в один клик
+            </a>
+            <!-- catalog-items__link-end -->
+
+            <div class="card-product__button">
+              <svg viewBox="0 0 30 30">
+                <use xlink:href="#basket"/>
+              </svg>
+
+              Добавить в корзину
+            </div>
+            <!-- catalog-items__button-end -->
+
+          </div>
+          <!-- card-product two end -->
+          <div class="card-product">
+
+            <div class="card-product__img">
+              <img src="img/card-flower-3.jpg" alt="">
+              <div class="card-product__action day">Букет дня</div>
+              <span class="card-product__img_text">
+                Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
+              </span>
+              <div class="card-product__img_bg"></div>
+            </div>
+            <!-- catalog-items__img-end -->
+            <h3 class="card-product__title">
+              Цветочная нимфа
+            </h3>
+            <!-- catalog-items__title-end -->
+
+            <div class="card-product__cost">
+              <span class="card-product__cost_item">5200 &#x20b8;</span>
+              <span class="card-product__cost_item">1200 &#x20b8;</span>
+            </div>
+            <!-- catalog-items__cost-end -->
+
+            <a href="#" class="card-product__link">
+              Купить в один клик
+            </a>
+            <!-- catalog-items__link-end -->
+
+            <div class="card-product__button">
+              <svg viewBox="0 0 30 30">
+                <use xlink:href="#basket"/>
+              </svg>
+
+              Добавить в корзину
+            </div>
+            <!-- catalog-items__button-end -->
+
+          </div>
+          <!-- card-product two end -->
+          
          
 
           <!-- catalog-items-end -->
@@ -955,7 +959,7 @@
         </div>
 
         <div class="about-company__video">
-            <iframe width="701" height="393" src="https://www.youtube.com/embed/gWGmOjtf4rI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="99%" height="393" src="https://www.youtube.com/embed/gWGmOjtf4rI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
   </section>
@@ -988,7 +992,6 @@
               <img src="img/slider-trust/company-4.png" alt="">
             </div>
 
-           
           </div>
 
           <i class="arrow-slider-left"></i>
