@@ -7,6 +7,9 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="fotorama-4.6.4/fotorama.css">
+  <link rel="stylesheet" type="text/css" href="css/slider-pro.min.css" media="screen"/>
+  <!-- <link rel="stylesheet" type="text/css" href="css/examples.css" media="screen"/> -->
   <link rel="stylesheet" href="css/main.css">
   
 </head>
@@ -194,11 +197,61 @@
       </h2>
 
       <div class="page-product">
-        <div class="slider-page-product">
-          <div class="slider-card-product__item">
-            <img src="img/Group 12.jpg" alt="">
+
+      <div id="example5" class="slider-pro slider-page-product ">
+        <div class="sp-slides">
+          <div class="sp-slide">
+            <img class="sp-image" src="css/images/blank.gif"
+              data-src="img/card-product-slide.jpg"/>
           </div>
+    
+          <div class="sp-slide">
+            <img class="sp-image" src="css/images/blank.gif"
+            data-src="img/card-product-slide.jpg"/>
+          </div>
+    
+          <div class="sp-slide">
+            <img class="sp-image" src="css/images/blank.gif"
+              data-src="img/card-product-slide.jpg"/>
+          </div>
+    
+          <div class="sp-slide">
+            <img class="sp-image" src="css/images/blank.gif"
+              data-src="img/card-product-slide.jpg"/>
+          </div>
+    
         </div>
+        <!-- минниатюра -->
+        <div class="sp-thumbnails">
+          <div class="sp-thumbnail">
+            <div class="sp-thumbnail-image-container">
+              <img class="sp-thumbnail-image" src="img/photo-rama-1.png" />
+            </div>
+          </div>
+    
+          <div class="sp-thumbnail">
+            <div class="sp-thumbnail-image-container">
+              <img class="sp-thumbnail-image" src="img/photo-rama-1.png"/>
+            </div>
+          </div>
+    
+          <div class="sp-thumbnail">
+            <div class="sp-thumbnail-image-container">
+              <img class="sp-thumbnail-image" src="img/photo-rama-1.png"/>
+            </div>
+          </div>
+    
+          <div class="sp-thumbnail">
+            <div class="sp-thumbnail-image-container">
+              <img class="sp-thumbnail-image" src="img/photo-rama-1.png"/>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+       
+
+
         <!-- slider page product end -->
 
         <div class="page-product__info">
@@ -351,7 +404,7 @@
         <h2 class="block-header">
           Недавно просмотренные товары
         </h2>
-        <div class="catalog-items__all">
+        <div class="catalog-items">
           <div class="card-product">
 
               <div class="card-product__img">
@@ -569,39 +622,40 @@
       <div class="slider-gift-wrap">
           <h2 class="block-header">
             Подарки к букету
-          </h2>
-          <div class="catalog-items__all">
+          </h2>            
+
+          <div class="slider-gift">
             <div class="card-product">
 
-              <div class="card-product__img">
-                <img src="img/gifts/Rectangle.jpg" alt="">
-                <div class="card-product__img_bg"></div>
-              </div>
-              <!-- catalog-items__img-end -->
-              <h3 class="card-product__title">
-                Цветочная нимфа
-              </h3>
-              <!-- catalog-items__title-end -->
-
-              <div class="card-product__cost">
-                <span class="card-product__cost_item">1200 &#x20b8</span>
-              </div>
-              <!-- catalog-items__cost-end -->
-
-              <a href="#" class="card-product__link">
-                Купить в один клик
-              </a>
-              <!-- catalog-items__link-end -->
-
-              <div class="card-product__button">
-                <svg viewBox="0 0 30 30">
-                  <use xlink:href="#basket"/>
-                </svg>
-
-                Добавить в корзину
-              </div>
-              <!-- catalog-items__button-end -->
-
+                <div class="card-product__img">
+                  <img src="img/gifts/Rectangle.jpg" alt="">
+                  <div class="card-product__img_bg"></div>
+                </div>
+                <!-- catalog-items__img-end -->
+                <h3 class="card-product__title">
+                  Цветочная нимфа
+                </h3>
+                <!-- catalog-items__title-end -->
+  
+                <div class="card-product__cost">
+                  <span class="card-product__cost_item">1200 &#x20b8</span>
+                </div>
+                <!-- catalog-items__cost-end -->
+  
+                <a href="#" class="card-product__link">
+                  Купить в один клик
+                </a>
+                <!-- catalog-items__link-end -->
+  
+                <div class="card-product__button">
+                  <svg viewBox="0 0 30 30">
+                    <use xlink:href="#basket"/>
+                  </svg>
+  
+                  Добавить в корзину
+                </div>
+                <!-- catalog-items__button-end -->
+  
             </div>
             <!-- card-product two end -->
             <div class="card-product">
@@ -703,11 +757,43 @@
 
             </div>
             <!-- card-product two end -->
+            <div class="card-product">
+
+                <div class="card-product__img">
+                  <img src="img/gifts/bear.jpg" alt="">
+                  <div class="card-product__img_bg"></div>
+                </div>
+                <!-- catalog-items__img-end -->
+                <h3 class="card-product__title">
+                  Цветочная нимфа
+                </h3>
+                <!-- catalog-items__title-end -->
+  
+                <div class="card-product__cost">
+                  <span class="card-product__cost_item">1200 &#x20b8</span>
+                </div>
+                <!-- catalog-items__cost-end -->
+  
+                <a href="#" class="card-product__link">
+                  Купить в один клик
+                </a>
+                <!-- catalog-items__link-end -->
+  
+                <div class="card-product__button">
+                  <svg viewBox="0 0 30 30">
+                    <use xlink:href="#basket"/>
+                  </svg>
+  
+                  Добавить в корзину
+                </div>
+                <!-- catalog-items__button-end -->
+  
+            </div>
+            <!-- card-product two end -->
           </div>
-          <!-- <div class="slider-gift">
-            <div class="slider-gift__item"></div>
-            <div class="slider-gift__item"></div>
-          </div> -->
+
+          <i class="slider-gift-arr-l"></i>
+          <i class="slider-gift-arr-r"></i>
       </div>
 
       <div class="slider-related-wrap">
@@ -715,7 +801,45 @@
             Похожие товары
           </h2>
 
-          <div class="catalog-items__all">
+          <div class="slider-related">
+            <div class="card-product">
+
+                <div class="card-product__img">
+                  <img src="img/card-flower-2.jpg" alt="">
+                  <div class="card-product__action day">Букет дня</div>
+                  <span class="card-product__img_text">
+                    Букет из синих цветов ирисов, белых роз и зелени. Сочетание контрастных цветов гармонично создают настроение букета. Необычное соцветие ирисов и нежность белоснежных...
+                  </span>
+                  <div class="card-product__img_bg"></div>
+                </div>
+                <!-- catalog-items__img-end -->
+                <h3 class="card-product__title">
+                  Цветочная нимфа
+                </h3>
+                <!-- catalog-items__title-end -->
+    
+                <div class="card-product__cost">
+                  <span class="card-product__cost_item">5200 &#x20b8</span>
+                  <span class="card-product__cost_item">1200 &#x20b8</span>
+                </div>
+                <!-- catalog-items__cost-end -->
+    
+                <a href="#" class="card-product__link">
+                  Купить в один клик
+                </a>
+                <!-- catalog-items__link-end -->
+    
+                <div class="card-product__button">
+                  <svg viewBox="0 0 30 30">
+                    <use xlink:href="#basket"/>
+                  </svg>
+    
+                  Добавить в корзину
+                </div>
+                <!-- catalog-items__button-end -->
+    
+            </div>
+            <!-- card-product two end -->
             <div class="card-product">
   
               <div class="card-product__img">
@@ -870,17 +994,15 @@
             <!-- card-product two end -->
           </div>
 
-          <!-- <div class="slider-related">
-            <div class="slider-related__item"></div>
-            <div class="slider-related__item"></div>
-          </div> -->
+          <i class="slider-related-arr-l"></i>
+          <i class="slider-related-arr-r"></i>
       </div>
       
     </div>
   </section>
 
   <section >
-    <div class="container wrap-review card-product-review">
+    <div class="container wrap-review">
       <h2 class="block-header">
           Отзывы наших клиентов
       </h2>
@@ -924,8 +1046,8 @@
 
           </div>
         </div>
-        <i class="arrow-slider-left"></i>
-        <i class="arrow-slider-right"></i>
+        <i class="feedback-l"></i>
+        <i class="feedback-r"></i>
       </div>
 
       <a href="#" class="review-button">Оставить свой озтыв</a>
@@ -1024,6 +1146,8 @@
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="slick/slick.min.js"></script>
+  <script src="fotorama-4.6.4/fotorama.js"></script>
+  <script src="js/jquery.sliderPro.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
