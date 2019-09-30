@@ -1,6 +1,6 @@
 $(function() {
-  $('.modal-overlay').show('slow')
-  $('.modal-select-city').show('slow')
+  // $('.modal-overlay').show('slow')
+  // $('.modal-select-city').show('slow')
 
   // search-form
   $('.search-form-icon').on('click', function() {
@@ -103,7 +103,8 @@ $(function() {
 
   // modal
   $('.modal-overlay').on('click', function() {
-    $(this).hide('slow')
+    $(this).hide('slow');
+
   });
 
   $('.modal-select-city .checkbox').on('click', function(e) {
@@ -112,7 +113,24 @@ $(function() {
   });
 
 
+// mobile-menu
 
+$('.burger-menu').on('click', function() {
+  $('.menu-mobile').toggleClass('menu-active');
+  $('.content-page').toggleClass('content-active');
+  $('.menu-overlay').show('slow');
+})
+
+$('.menu-overlay').on('click', function() {
+  $('.menu-mobile').toggleClass('menu-active');
+  $('.content-page').toggleClass('content-active');
+  $(this).hide('slow');
+});
+
+$('.menu-mobile__item').on('click', function() {
+  $(this).children('.sub-menu').toggleClass('show');
+
+})
 
   
 
