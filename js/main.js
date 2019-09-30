@@ -102,8 +102,10 @@ $(function() {
 
 
   // modal
-  $('.modal-overlay').on('click', function() {
-    $(this).hide('slow');
+  $('.modal-overlay, .modal-buy-close').on('click', function() {
+    $('.modal-overlay').hide('slow');
+    $('.modal-select-city').hide('slow');
+    $('.modal-buy-wrap').hide('slow');
 
   });
 
@@ -112,9 +114,16 @@ $(function() {
     $('.modal-select-city').hide('slow')
   });
 
+  $('.card-product__link').each(function(i,item){
+    $(item).on('click', function(e) {
+      e.preventDefault();
+      $('.modal-overlay').show('slow');
+      $('.modal-buy-wrap').show('slow');
+    });
+  });
+
 
 // mobile-menu
-
 $('.burger-menu').on('click', function() {
   $('.menu-mobile').toggleClass('menu-active');
   $('.content-page').toggleClass('content-active');

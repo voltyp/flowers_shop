@@ -41,6 +41,9 @@ option:active,
   outline: 0;
   outline-offset: 0;
 }
+textarea {
+  padding: 0;
+}
 h1 {
   font-size: 2.8571rem;
 }
@@ -157,12 +160,30 @@ h4 {
   width: 588px;
 }
 .top-menu__item {
+  position: relative;
+  display: block;
+  margin-right: 34px;
+}
+.top-menu__item:nth-child(2):after {
+  display: inline-block;
+  vertical-align: middle;
+  width: 9px;
+  height: 5px;
+  margin-left: 4px;
+  content: ' ';
+  background: url(../img/icon/icon_arrow.svg) no-repeat center;
+}
+.top-menu__item a {
   color: #333;
-  margin-right: 38px;
 }
 .top-menu__item:hover {
   color: #D31473;
   transition: 0.5s;
+}
+.top-menu__item:hover .sub-menu {
+  display: flex;
+  position: absolute;
+  text-align: left;
 }
 .search-form {
   cursor: pointer;
@@ -1655,6 +1676,92 @@ h4 {
 }
 .content-active {
   transform: translateX(50%);
+}
+.modal-buy {
+  position: relative;
+  display: flex;
+  max-width: 600px;
+  background: #f7f7f7;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 9px;
+}
+.modal-buy-wrap {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+}
+.modal-buy-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding: 40px;
+  text-align: center;
+}
+.modal-buy-item:first-child {
+  background: #0F3978;
+  color: #fff;
+}
+.modal-buy-item:last-child {
+  font-size: 1.286rem;
+}
+.modal-buy-title {
+  font-size: 1.714rem;
+  font-family: Book Antiqua;
+  font-weight: bold;
+  margin-bottom: 31px;
+}
+.modal-buy-text {
+  margin-bottom: 41px;
+  font-size: 14px;
+  text-align: left;
+  line-height: 19px;
+}
+.modal-buy-input {
+  font-style: italic;
+  padding: 14px 0 14px 10px;
+  margin-bottom: 44px;
+  background: #F7F7F7;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1);
+  border: 0;
+  border-radius: 6px;
+}
+.modal-buy-button {
+  max-width: 220px;
+  padding: 15px 0;
+  font-size: 1.286rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #D31473;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  color: #fff;
+}
+.modal-buy-img {
+  margin-bottom: 36px;
+}
+.modal-buy-name-product {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.modal-buy-cost {
+  font-weight: bold;
+}
+.modal-buy-close {
+  position: absolute;
+  right: -15px;
+  top: -10px;
+  width: 31px;
+  height: 31px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 31px;
+  color: #0F3978;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 @media (max-width: 1200px) {
   .container {
