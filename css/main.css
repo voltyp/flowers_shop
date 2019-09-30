@@ -1064,7 +1064,7 @@ h4 {
 }
 .page-product__description .bouquet-description__title {
   display: block;
-  margin-bottom: ;
+  margin-bottom: 0;
   font-weight: 600;
   font-size: 1.286rem;
   text-transform: uppercase;
