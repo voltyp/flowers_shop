@@ -1,6 +1,12 @@
 $(function() {
-  // $('.modal-overlay').show('slow')
-  // $('.modal-select-city').show('slow')
+    let flagStart = false;
+
+    setTimeout(function(e) {
+      flagStart = true;
+      $('body').addClass('start-page')
+      $('.modal-overlay').show()
+      $('.modal-select-city').show()
+    },100)
 
   // search-form
   $('.search-form-icon').on('click', function() {
@@ -102,16 +108,28 @@ $(function() {
 
 
   // modal
-  $('.modal-overlay, .modal-buy-close').on('click', function() {
+  $('.modal-overlay, .modal-buy-close').on('click', function(e) {
+    let target = e.target;
+
+    if (flagStart && e.target == this) { 
+      alert('Пожалуйста, выберите город')
+      return
+    }    
+
     $('.modal-overlay').hide('slow');
     $('.modal-select-city').hide('slow');
     $('.modal-buy-wrap').hide('slow');
-
   });
 
-  $('.modal-select-city .checkbox').on('click', function(e) {
-    $('.modal-overlay').hide('slow')
-    $('.modal-select-city').hide('slow')
+  $('.modal-select-city .checkbox').on('click', function() {
+    let selectCity = $(this).siblings('label').text();
+    
+    $('body').removeClass('start-page')
+    $('#city').text(selectCity)
+    $('.modal-overlay').hide()
+    $('.modal-select-city').hide()
+
+    flagStart = false;
   });
 
   $('.card-product__link').each(function(i,item){
@@ -284,25 +302,5 @@ $('.menu-mobile__item').on('click', function() {
     
   });
 
-  $( '#example5' ).sliderPro({
-    width: 440,
-    height: 527,
-    orientation: 'horizontal',
-    loop: false,
-    responsive: true,
-    arrows: true,
-    buttons: false,
-    thumbnailsPosition: 'left',
-    thumbnailPointer: true,
-    thumbnailWidth: 116,
-    thumbnailHeight: 116,
-    autoplay: false,
-    forceSize: 'contain',
-    breakpoints: {
-      1120: {
-        width: 340,
-        height: 427,
-      }
-    }
-  });
+
 });

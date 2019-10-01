@@ -480,6 +480,9 @@ h4 {
 .catalog-menu__item:first-child {
   margin-left: 0;
 }
+.catalog-menu__item:hover {
+  color: #D31473;
+}
 .catalog-menu > .active {
   color: #D31473;
 }
@@ -1762,6 +1765,9 @@ h4 {
   border-radius: 50%;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+.start-page {
+  overflow: hidden;
 }
 @media (max-width: 1200px) {
   .container {
