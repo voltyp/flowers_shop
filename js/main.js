@@ -115,6 +115,7 @@ $(function() {
     $('.modal-select-city').hide('slow');
     $('.modal-buy').hide('slow');
     $('.modal-review').hide('slow');
+    $('.personal-data').hide('slow');
   });
   // select-city
   $('.modal-select-city .checkbox').on('click', function() {
@@ -141,6 +142,12 @@ $(function() {
     $('.modal-overlay').show('slow');
   });
 
+  $('.personal-data-link').on('click', function(e){
+    e.preventDefault()
+    $('.personal-data').show();
+    $('.modal-overlay').show('slow');
+  });
+
   $('.card-product__link').each(function(i,item){
     
     $(item).on('click', function(e) {
@@ -154,6 +161,7 @@ $(function() {
 
 // mobile-menu
 $('.burger-menu').on('click', function() {
+  $('.menu-mobile').show();
   $('.menu-mobile').toggleClass('menu-active');
   $('.content-page').toggleClass('content-active');
   $('.menu-overlay').show('slow');
