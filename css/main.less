@@ -1,3 +1,5 @@
+@import "/fonts/font.css";
+
 html {
   scroll-behavior: smooth;
   font-size: 14px;
@@ -5,7 +7,7 @@ html {
 
 body {
   color: #333333;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   overflow-x: hidden;
 }
@@ -177,6 +179,7 @@ h4 {
   margin-bottom: 9px;
 }
 .header-city {
+  display: flex;
   margin-bottom: -5px;
 
   & span {
@@ -1735,81 +1738,101 @@ h4 {
 
 // c
 
+
+// radio and checkbox
+
+.radio,
 .checkbox {
-	position: absolute;
-	z-index: -1;
-	opacity: 0;
-	margin: 10px 0 0 20px;
-}
-.checkbox + label {
-	position: relative;
-	padding: 0 0 10px 30px;
-	cursor: pointer;
-}
-.checkbox + label:before {
-	content: '\2713';
-  color: transparent;
-  display: inline-block;
-	position: absolute;
-	top: -4px;
-	left: 0;
-	width: 24px;
-  height: 24px;
-  text-align: center;
-	background: #F7F7F7;
-	transition: .2s;
+  display: none;
+
+  &-wrap {
+  }
 }
 
-.checkbox:checked + label:before {
-  font-size: 22px;
-  color: #D31473;
-  padding-bottom: 2px;
-}
-// check
+.label-style {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  cursor: pointer;
 
-.radio {
-	position: absolute;
-	z-index: -1;
-	opacity: 0;
-	margin: 10px 0 0 7px;
-}
-.radio + label {
-	position: relative;
-	padding: 0 0 0 35px;
-	cursor: pointer;
-}
-.radio + label:before {
-	content: '';
-	position: absolute;
-	top: -0.016em;
-  left: 0.09em;
-	width: 16px;
-	height: 16px;
-	border: 2px solid #D31473;
-	border-radius: 50%;
-	background: #FFF;
-}
-.radio + label:after {
-	content: '';
-	position: absolute;
-  top: 0.49em;
-  left: 0.546em;
-	width: 7px;
-	height: 7px;
-	border-radius: 50%;
-	background: #D31473;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
-	opacity: 0;
-	transition: .2s;
-}
-.radio:checked + label:after {
-	opacity: 1;
+  &_i {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    border: 2px solid #D31473;
+    border-radius: 6px;
+
+    &:before {
+      position: absolute;
+      top: 3px; 
+      bottom: 3px;
+      left: 3px;
+      right: 3px; 
+      content: '';
+      background: #D31473;
+      border-radius: 6px;
+      transform: scale(0);
+      transition: 0.4s;
+    }
+  }
+
+  & .radio + i {
+    border-radius: 50%;
+  }
+
+  & .radio:checked + i:before {
+      transform: scale(1);
+    }
+
+  & .checkbox + i {
+    border: 2px solid #0F3978;
+  }
+
+  & .checkbox + i:before {
+    background: initial;
+  }
+
+  & .checkbox:checked + i:before {
+    top: -11px;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    content: '\2713';
+    background: none;
+    font-size: 20px;
+    transform: scale(1);
+
+  }
+
+
 }
 
 
-.radio-wrap {
-  margin-bottom: 10px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // radio-end
 
@@ -1979,14 +2002,15 @@ h4 {
   left: 50%;
   z-index: 101;
   transform: translate(-50%, -50%);
-  padding: 40px;
+  width: 387px;
+  padding: 40px 0;
   text-align: center;
   color: #0F3978;
   background: #fff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 9px;
 
-  & span {
+  & h5 {
     font-family: Book Antiqua;
     font-weight: bold;
     font-size: 22px;
@@ -1995,29 +2019,23 @@ h4 {
 
   & .modal-checkbox {
     display: flex;
+    justify-content: center;
     margin-top: 35px;
+    font-size: 1.143rem;
+    font-weight: 600;
   }
 
   & .check-box-wrap {
-    margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
 
-    &:last-child {
-      margin-right: 0;
+    & .label-style {
+      margin-right: 46px;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
-  }
-
-  & .checkbox + label:before {
-    top: 2px;
-    width: 15px;
-    height: 15px;
-    border: 1px solid #0F3978;
-    background: initial;
-  }
-
-  .checkbox:checked + label:before {
-    font-size: 12px;
-    color: #0F3978;
-    padding-bottom: 0;
   }
 }
 
@@ -2536,6 +2554,11 @@ h4 {
   .error-link-item {
     font-size: 17px;
   }
+
+  // popup
+  .modal-select-city .modal-checkbox {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -2551,6 +2574,11 @@ h4 {
    }
    .buttom-normal {
      width: 240px;
+   }
+
+   .modal-select-city {
+     width: 78%;
+     padding: 40px;
    }
 }
 

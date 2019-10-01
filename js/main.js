@@ -1,12 +1,5 @@
 $(function() {
-    let flagStart = false;
-
-    setTimeout(function(e) {
-      flagStart = true;
-      $('body').addClass('start-page')
-      $('.modal-overlay').show()
-      $('.modal-select-city').show()
-    },100)
+   
 
   // search-form
   $('.search-form-icon').on('click', function() {
@@ -122,12 +115,13 @@ $(function() {
   });
 
   $('.modal-select-city .checkbox').on('click', function() {
-    let selectCity = $(this).siblings('label').text();
+    let selectCity = $(this).siblings('span').text();
+    console.log(selectCity);
     
     $('body').removeClass('start-page')
     $('#city').text(selectCity)
-    $('.modal-overlay').hide()
-    $('.modal-select-city').hide()
+    $('.modal-overlay').hide('slow')
+    $('.modal-select-city').hide('slow')
 
     flagStart = false;
   });

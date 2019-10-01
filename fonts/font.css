@@ -1,0 +1,18 @@
+@font-face {
+  font-family: '7114';
+  src: url('7114.eot');
+  src: url('7114.eot?#iefix') format('embedded-opentype'),
+       url('7114.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BookAntiqua';
+  src: url('BookAntiqua.svg#BookAntiqua') format('svg'),
+       url('BookAntiqua.ttf') format('truetype'),
+       url('BookAntiqua.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
