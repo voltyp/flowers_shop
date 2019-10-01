@@ -396,6 +396,8 @@
             </div>    
             
           </div>
+          <i class="main-slider-l"></i>
+          <i class="main-slider-r"></i>
         </div>
       </div>
   </section>
@@ -403,26 +405,87 @@
   <!-- main-slider-end -->
 
   <section>
-    <div class="container banners">
+    <!-- <div class="container banners">
       <a class="banners-item first-banner" href="#">
+        <img src="img/banner-1.jpg" alt="букет по фото">
         <div class="banners-item__text">
           <span>Букет по фото или по описанию</span>
         </div>
+        <span class="banners-item_bg_text">
+          Отправьте фотографию желаемого букета и контактные данные, чтобы узнать стоимость и сроки изготовления букета
+        </span>
+        <div class="banners-item_bg"></div>
       </a>
 
       <div class="right-banners">
         <a href="#" class="banners-item">
           <img src="img/banner-2.jpg" alt="">
+
+          <p class="banners-item_bg_text">
+            Авторские букеты– для тех, кто ценит индивидуальность. Хотите произвести незабываемое впечатление? Тогда авторский букет - то, что Вам нужно!
+            В зависимости от вида цветов и их оттенков, можно создать композицию для любого повода. Доверьтесь фантазии наших опытных мастеров!
+          </p>
+          <div class="banners-item_bg"></div>
         </a>
         <div class="right-banners__bottom">
             <a href="#" class="banners-item">
-                <img src="img/banner-3.jpg" alt="">
+              <img src="img/banner-3.jpg" alt="">
+              <p class="banners-item_bg_text">
+                Большой выбор букетов из роз. Лучший способ обратить на себя внимание особенного человека - это подарить ему розы.
+              </p>
+              <div class="banners-item_bg"></div>
             </a>
             <a href="#" class="banners-item">
-                <img src="img/banner_4.jpg" alt="">
+              <img src="img/banner_4.jpg" alt="">
+              <p class="banners-item_bg_text">
+                Большой ассортимент комнатных растений. Большой ассортимент товаров для пересадки комнатных растений. Услуги по пересадки растений.
+              </p>
+              <div class="banners-item_bg"></div> 
             </a>
         </div>
       </div>
+      
+    </div> -->
+
+    <div class="container banners">
+      <a  href="#" class="banners-item first-banner">
+        <img src="img/banner-1.jpg" alt="букет по фото">
+        <div class="banners-item__text">
+          <span>Букет по фото или по описанию</span>
+        </div>
+        <span class="banners-item_bg_text">
+          Отправьте фотографию желаемого букета и контактные данные, чтобы узнать стоимость и сроки изготовления букета
+        </span>
+        <div class="banners-item_bg"></div>
+      </a>
+
+      <a href="#" class="banners-item">
+        <img src="img/banner-2.jpg" alt="">
+
+        <p class="banners-item_bg_text">
+          Авторские букеты– для тех, кто ценит индивидуальность. Хотите произвести незабываемое впечатление? Тогда авторский букет - то, что Вам нужно!
+          В зависимости от вида цветов и их оттенков, можно создать композицию для любого повода. Доверьтесь фантазии наших опытных мастеров!
+        </p>
+        <div class="banners-item_bg"></div>
+      </a>
+        
+      <a href="#" class="banners-item">
+        <img src="img/banner-3.jpg" alt="">
+        <p class="banners-item_bg_text">
+          Большой выбор букетов из роз. Лучший способ обратить на себя внимание особенного человека - это подарить ему розы.
+        </p>
+        <div class="banners-item_bg"></div>
+      </a>
+
+      <a href="#" class="banners-item">
+        <img src="img/banner_4.jpg" alt="">
+        <p class="banners-item_bg_text">
+          Большой ассортимент комнатных растений. Большой ассортимент товаров для пересадки комнатных растений. Услуги по пересадки растений.
+        </p>
+        <div class="banners-item_bg"></div> 
+      </a>
+    </div>
+      
     </div>
   </section>
   <!-- banners-end -->
@@ -1298,37 +1361,67 @@
         </div>
     </div>
   </div>
-  <div class="modal-buy-wrap hide">
-    <form class="modal-buy">
+
+  <div class="modal-wrap modal-buy hide">
+    <form class="modal">
       <div class="modal-buy-item">
-        <span class="modal-buy-title">
+        <span class="modal-title">
             Купить <br>
             в один клик
         </span>
 
-        <span class="modal-buy-text">
+        <span class="modal-text">
           Оставьте ваш номер телефона и мы перезвоним Вам  в самое ближайшее время
         </span>
 
-        <input class="modal-buy-input" type="" name="" id="" placeholder="Ваш номер телефона">
-        <button class="button-normal modal-buy-button">Заказать</button>
+        <input class="modal-input" type="" name="" id="" placeholder="Ваш номер телефона">
+        <button class="button-normal modal-button" type="submit">Заказать</button>
       </div>
       <div class="modal-buy-item">
         <img class="modal-buy-img" src="img/modal-img.jpg" alt="букет-роз">
       <span class="modal-buy-name-product">Сладостная музыка</span>
       <span class="card-product__cost_item modal-buy-cost">40 000 &#x20b8;</span>
       </div>
-      <div class="modal-buy-close">X</div>
+      <div class="modal-close">X</div>
     </form>
   </div>
   <div class="modal-overlay hide"></div>
   <div class="menu-overlay hide"></div>
 </div>
 
- 
-  <script>
-    
+  <div class="modal-wrap modal-call-back hide">
+    <form class="modal">
+      <div class="modal-buy-item">
 
+        <span class="modal-text">
+          Мы перезвоним Вам  в самое ближайшее время
+        </span>
+
+        <input class="modal-input" type="" name="" id="" placeholder="Ваше имя">
+        <input class="modal-input" type="" name="" id="" placeholder="Ваш номер телефона">
+        <button class="button-normal modal-button" type="submit">Отправить</button>
+      </div>
+      <div class="modal-close">X</div>
+    </form>
+  </div>
+  <div class="modal-wrap modal-review hide">
+    <form class="modal">
+      <div class="modal-buy-item">
+
+        <span class="modal-title">
+          Оставьте свой отзыв
+        </span>
+
+        <input class="modal-input" type="" name="" id="" placeholder="Ваше имя">
+        <input class="modal-input" type="" name="" id="" placeholder="Ваш номер телефона">
+        <textarea class="modal-input" name="" id="" cols="30" rows="10"></textarea>
+        <button class="button-normal modal-button" type="submit">Отправить</button>
+      </div>
+      <div class="modal-close">X</div>
+    </form>
+  </div>
+  
+  <script>
     setTimeout(function(e) {
       flagStart = false;
       $('body').addClass('start-page')

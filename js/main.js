@@ -101,19 +101,22 @@ $(function() {
 
 
   // modal
-  $('.modal-overlay, .modal-buy-close').on('click', function(e) {
+  $('.modal-overlay, .modal-close').on('click', function(e) {
     let target = e.target;
-
+    
+    
     if (flagStart && e.target == this) { 
       alert('Пожалуйста, выберите город')
       return
     }    
 
     $('.modal-overlay').hide('slow');
-    $('.modal-select-city').toggleClass('hide');
-    $('.modal-buy-wrap').hide('slow');
+    $('.modal-call-back').hide('slow');
+    $('.modal-select-city').hide('slow');
+    $('.modal-buy').hide('slow');
+    $('.modal-review').hide('slow');
   });
-
+  // select-city
   $('.modal-select-city .checkbox').on('click', function() {
     let selectCity = $(this).siblings('span').text();
     console.log(selectCity);
@@ -121,18 +124,32 @@ $(function() {
     $('body').removeClass('start-page')
     $('#city').text(selectCity)
     $('.modal-overlay').hide('slow')
-    $('.modal-select-city').hide('slow')
+    $('.modal-select-city').hide(700)
 
     flagStart = false;
   });
+  // callback
+  $('.button-callback').on('click', function(e){
+    e.preventDefault()
+    $('.modal-call-back').toggleClass('hide');
+    $('.modal-overlay').show('slow');
+  });
+
+  $('.review-button').on('click', function(e){
+    e.preventDefault()
+    $('.modal-review').toggleClass('hide');
+    $('.modal-overlay').show('slow');
+  });
 
   $('.card-product__link').each(function(i,item){
+    
     $(item).on('click', function(e) {
       e.preventDefault();
       $('.modal-overlay').show('slow');
-      $('.modal-buy-wrap').show('slow');
+      $('.modal-buy').show('slow');
     });
   });
+
 
 
 // mobile-menu
@@ -163,7 +180,9 @@ $('.menu-mobile__item').on('click', function() {
     slidesToShow: 1,
     autoplay: true,
     autoplaySpeed: 4000,
-    arrows : true
+    arrows : true,
+    prevArrow: '.main-slider-r',
+    nextArrow:'.main-slider-l',
   });
 
   $('.slider-review').slick({

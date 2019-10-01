@@ -44,6 +44,7 @@ option:active, :hover, :focus {
 
 textarea {
   padding: 0;
+  resize: none;
 }
 
 h1 {
@@ -437,13 +438,37 @@ h4 {
 // slider 
 .wrap-main-slider {
   position: relative;
+
+  & .main-slider-l {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: url('../img/icon/arrow-slider-left.svg') no-repeat center;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  & .main-slider-r {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: url('../img/icon/arrow-slider-right.svg') no-repeat center;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
 }
 
 .main-slider {
+  position: relative;
   max-width: 100%;
   // min-height: 480px;
   margin-bottom: 60px;
   overflow: hidden;
+
+  
 
   &__banner {
     position: absolute;
@@ -511,13 +536,45 @@ h4 {
   margin-bottom: 60px;
 
   & img {
-    max-width: 100%;
+    width: 100%;
   }
 
   &-item {
+    position: relative;
     margin-left: 30px;
-
     
+    &:hover &_bg {
+      opacity: 0.7;
+      transition: 0.7s;
+    }
+
+    &:hover &_bg_text {
+      opacity: 1;
+      transition: 0.7s;
+    }
+
+    &_bg {
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 98%;
+      background: #D31473;
+      opacity: 0;
+      border-radius: 9px;
+
+      &_text {
+        position: absolute;
+        z-index: 23;
+        top: 17%;
+        padding: 0 20px;
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 1.7rem;
+        color: #fff;
+        opacity: 0;
+      }
+    }
   }
 
   &-item__text {
@@ -547,14 +604,28 @@ h4 {
 }
 
 .first-banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  flex: 1;
-  max-width: 470px;
-  margin-left: 0px;
-  background: url(../img/banner-1.jpg) no-repeat center;
-  text-align: center;
+  // position: relative;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-end;
+  // flex: 1;
+  // max-width: 470px;
+  // margin-left: 0px;
+  // text-align: center;
+
+  .banners-item__text {
+    position: absolute;   
+    bottom: 7px;
+    width: 100%;
+  }
+
+
+  & .banners-item_bg {
+    height: 98%;
+    &_text {
+      left: 0;
+    }
+  }
 }
 
 .right-banners {
@@ -626,7 +697,7 @@ h4 {
 
   &__img {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     & img {
       width: 100%;
@@ -1647,7 +1718,6 @@ h4 {
 
     & input,
     & textarea {
-      padding-left: 15px;
       background: #F7F7F7;
       box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1);
       border-radius: 6px;
@@ -1660,7 +1730,6 @@ h4 {
     & textarea {
       height: 110px;
       padding-left: 0;
-      resize: none;
     }
   }
 }
@@ -1794,6 +1863,8 @@ h4 {
 
   & .checkbox + i:before {
     background: initial;
+    transform: none;
+    transition: none;
   }
 
   & .checkbox:checked + i:before {
@@ -1804,8 +1875,6 @@ h4 {
     content: '\2713';
     background: none;
     font-size: 20px;
-    transform: scale(1);
-
   }
 
 
@@ -2114,13 +2183,10 @@ h4 {
   transform: translateX(50%);
 }
 
-.modal-buy {
-  position: relative;
+
+.modal {
   display: flex;
   max-width: 600px;
-  background: #f7f7f7;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 9px;  
 
   &-wrap {
     position: fixed;
@@ -2128,23 +2194,9 @@ h4 {
     top: 50%;
     z-index: 999;
     transform: translate(-50%,-50%);
-  }
-
-  &-item {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    padding: 40px;
-    text-align: center;
-
-    &:first-child {
-      background: #0F3978;
-      color: #fff;
-    }
-
-    &:last-child {
-      font-size: 1.286rem;
-    }
+    background: #f7f7f7;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 9px;  
   }
 
   &-title {
@@ -2162,16 +2214,6 @@ h4 {
 
   }
 
-  &-input {
-    font-style: italic;
-    padding: 14px 0 14px 10px;
-    margin-bottom: 44px;
-    background: #F7F7F7;
-    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1);
-    border: 0;
-    border-radius: 6px;
-  }
-
   &-button {
     max-width: 220px;
     padding: 15px 0;
@@ -2184,19 +2226,16 @@ h4 {
     color: #fff;
   }
 
-  &-img {
-    margin-bottom: 36px;
+  &-input {
+    font-style: italic;
+    padding: 14px 0 14px 10px;
+    margin-bottom: 44px;
+    background: #F7F7F7;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1);
+    border: 0;
+    border-radius: 6px;
   }
-
-  &-name-product {
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  &-cost {
-    font-weight: bold;
-  }
-
+  
   &-close {
     position: absolute;
     right: -15px;
@@ -2212,7 +2251,76 @@ h4 {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
   }
+
 }
+
+.modal-buy {
+
+  
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    padding: 40px;
+    text-align: center;
+
+    &:first-child {
+      background: #0F3978;
+      color: #fff;
+    }
+
+    &:last-child {
+      font-size: 1.286rem;
+    }
+  }  
+
+  &-img {
+    margin-bottom: 36px;
+  }
+
+  &-name-product {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &-cost {
+    font-weight: bold;
+  }
+}
+
+.modal-call-back .modal-buy {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 999;
+  transform: translate(-50%,-50%);
+  max-width: 300px;
+}
+
+.modal-review {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 999;
+  transform: translate(-50%,-50%);
+
+  &-modal-buy {
+    justify-content: center;
+  }
+  & .modal-buy-item {
+    max-width: inherit;
+  }
+  & .modal-buy-item {
+    width: 400px;
+  }
+
+  & .modal-buy-button {
+    width: 220px;
+    margin: 0 auto;
+  }
+}
+
 
 .start-page {
   overflow: hidden;
@@ -2596,4 +2704,39 @@ h4 {
 .sp-left-thumbnails.sp-has-pointer .sp-selected-thumbnail:before,
 .sp-left-thumbnails.sp-has-pointer .sp-selected-thumbnail:after {
   content: none;
+}
+
+
+// banners-grid
+.banners {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+    .first-banner {
+      grid-row-start: 1;
+      grid-row-end: 4;
+
+
+    }
+
+    &-item {
+      margin: 10px;
+
+      &:nth-child(2) {
+        grid-column-start: 2 ;
+        grid-column-end: 4;
+      }
+
+      &:nth-child(3) {
+        grid-column-start: 2 ;
+        grid-column-end: 3;
+      }
+
+      &:nth-child(4) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+      }
+    }
+    
 }
