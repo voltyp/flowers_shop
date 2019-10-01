@@ -1,5 +1,5 @@
 $(function() {
-   
+  let flagStart = true;
 
   // search-form
   $('.search-form-icon').on('click', function() {
@@ -110,7 +110,7 @@ $(function() {
     }    
 
     $('.modal-overlay').hide('slow');
-    $('.modal-select-city').hide('slow');
+    $('.modal-select-city').toggleClass('hide');
     $('.modal-buy-wrap').hide('slow');
   });
 

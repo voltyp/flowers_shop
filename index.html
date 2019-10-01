@@ -1117,7 +1117,7 @@
   <!-- slider-review-end -->
   
   <section>
-    <div class="container about-company">
+    <!-- <div class="container about-company">
         <h2 class="block-header">
             О компании
         </h2>
@@ -1137,7 +1137,7 @@
         <div class="about-company__video">
             <iframe width="99%" height="393" src="https://www.youtube.com/embed/gWGmOjtf4rI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-    </div>
+    </div> -->
   </section>
   <!-- about-company end -->
 
@@ -1327,13 +1327,13 @@
 
  
   <script>
-    let flagStart = false;
+    
 
     setTimeout(function(e) {
-      flagStart = true;
+      flagStart = false;
       $('body').addClass('start-page')
       $('.modal-overlay').show()
-      $('.modal-select-city').show()
+      $('.modal-select-city').toggleClass('hide')
     },100)
   </script>
 
