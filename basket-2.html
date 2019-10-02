@@ -7,6 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" href="css/main.css">
   
 </head>
@@ -458,7 +459,8 @@
               <div class="date-delivery">
                 <label for="">
                   Дата доставки
-                  <input type="text">
+                  <input class="date-delivery-input" type="text">
+                  <img src="img/icon/calendar-icon.svg" alt="дата доставки">
                 </label>
                 <label for="">
                   Время доставки
@@ -609,8 +611,18 @@
 <div class="modal-overlay hide"></div>
 <div class="menu-overlay hide"></div>
 </div>
+  
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="slick/slick.min.js"></script>
+  <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+  <script src="js/jquery-ui-1.12.1/datepicker-ru.js"></script>
   <script src="js/main.js"></script>
+
+  <script>
+      $(function(){
+        $.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
+        $('.date-delivery-input').datepicker();
+      })
+    </script>
 </body>
 </html>

@@ -1704,8 +1704,22 @@ h4 {
       flex: 1;
       max-width: 300px;
       &:first-child {
+        position: relative;
         margin-right: 10px;
+
+        & img {
+          position: absolute;
+          bottom: 18%;
+          right: 5%;
+          width: 18px;
+        }
       }
+    }
+
+    &-input {
+      
+
+      
     }
   }
   
@@ -2527,6 +2541,12 @@ h4 {
   }
   .form-step-2__col:last-child {
     min-width: 90%;
+  }
+
+  
+  .banners-item_bg_text{
+    top: 5%;
+    line-height: 1.5rem;
   }
 
   // basket 
