@@ -18,7 +18,7 @@ $(function() {
   $('.timer__counter').each(function(i,item){
     this.setAttribute('id', 'timer'+i);
     const el = '#' + this.id,  
-          endtimer = '2019-10-11';
+          endtimer = '2019-10-18';
     
     timer(el, endtimer)
   })
@@ -100,6 +100,8 @@ $(function() {
   });
 
 
+
+
   // modal
   $('.modal-overlay, .modal-close').on('click', function(e) {
     let target = e.target;
@@ -117,6 +119,7 @@ $(function() {
     $('.modal-review').hide('slow');
     $('.personal-data').hide('slow');
   });
+  
   // select-city
   $('.modal-select-city .checkbox').on('click', function() {
     let selectCity = $(this).siblings('span').text();
@@ -129,6 +132,7 @@ $(function() {
 
     flagStart = false;
   });
+
   // callback
   $('.button-callback').on('click', function(e){
     e.preventDefault()
@@ -293,6 +297,41 @@ $('.menu-mobile__item').on('click', function() {
     arrows : true,
     prevArrow: '.slider-related-arr-r',
     nextArrow:'.slider-related-arr-l',
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 730,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+    ]
+  });
+
+  $('.slider-recently-watched').slick({
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 4,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows : true,
+    prevArrow: '.slider-recently-watched-arr-r',
+    nextArrow:'.slider-recently-watched-arr-l',
     responsive: [
       {
         breakpoint: 1200,

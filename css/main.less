@@ -56,7 +56,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.857rem;
+  font-size: 1.557rem;
 }
 
 h4 {
@@ -767,13 +767,13 @@ h4 {
   }
 
   &__title {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-weight: bold;
   }
 
   // добавить теньге
   &__cost {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
     &_item {
       color: #0F3978;
@@ -1115,6 +1115,10 @@ h4 {
 
   &__map {
     margin: 20px 0 39px 0;
+
+    & iframe {
+      width: 100%;
+    }
   }
 
   & .header-phones {
@@ -1355,6 +1359,7 @@ h4 {
     }
 
     & .product-article {
+      visibility: hidden;
       font-weight: 600;
       text-transform: uppercase;
       color: #0F3978;
@@ -1469,6 +1474,7 @@ h4 {
 }
 
 .recently-watched-items {
+  position: relative;
   margin-bottom: 100px;
 
   & .catalog-items {
@@ -1493,7 +1499,8 @@ h4 {
 }
 
 .slider-gift-arr-l,
-.slider-related-arr-l {
+.slider-related-arr-l,
+.slider-recently-watched-arr-l {
   position: absolute;
   top: 50%;
   left: -40px;
@@ -1503,8 +1510,10 @@ h4 {
   transform: translateY(-50%);
   cursor: pointer;
 }
+
 .slider-gift-arr-r,
-.slider-related-arr-r {
+.slider-related-arr-r,
+.slider-recently-watched-arr-r {
   position: absolute;
   top: 50%;
   right: -40px;
@@ -1513,6 +1522,13 @@ h4 {
   background: url('../img/icon/right-rose-arr.svg') no-repeat center;
   transform: translateY(-50%);
   cursor: pointer;
+}
+
+.slider-recently-watched-arr-r {
+  background: url('../img/icon/right-rose-arr.svg') no-repeat center;
+}
+.slider-recently-watched-arr-l {
+  background: url('../img/icon/left-rose-arr.svg') no-repeat center;
 }
 
 .wrap-review.card-product-review {
