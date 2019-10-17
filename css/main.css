@@ -235,6 +235,7 @@ h4 {
 }
 .header-logo__item {
   display: flex;
+  justify-content: center;
   font-family: Book Antiqua;
   font-weight: bold;
   font-size: 2.8571rem;
@@ -397,7 +398,7 @@ h4 {
   margin-right: 15px;
   padding: 10px;
   border-radius: 0 0 9px 9px;
-  background-color: rgba(5, 5, 5, 0.3);
+  background-color: rgba(5, 5, 5, 0.2);
   color: #fff;
 }
 .main-slider__item {
@@ -574,7 +575,7 @@ h4 {
 }
 .card-product__img {
   position: relative;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 .card-product__img img {
   width: 100%;
@@ -623,7 +624,7 @@ h4 {
   font-weight: bold;
 }
 .card-product__cost {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .card-product__cost_item {
   color: #0F3978;
@@ -638,11 +639,11 @@ h4 {
   text-decoration-line: underline;
 }
 .card-product__timer {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .card-product__button {
   width: 230px;
-  margin: 18px auto 21px auto;
+  margin: 15px auto 18px auto;
   padding: 10px 0;
   line-height: 35px;
   color: #fff;

@@ -100,8 +100,6 @@ $(function() {
   });
 
 
-
-
   // modal
   $('.modal-overlay, .modal-close').on('click', function(e) {
     let target = e.target;
@@ -355,11 +353,6 @@ $('.menu-mobile__item').on('click', function() {
         }
       },
     ]
-  });
-
-  $('.basket__steps_step').each(function(i, item) {
-    console.log(item);
-    
   });
 
 
