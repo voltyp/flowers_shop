@@ -1723,9 +1723,11 @@ h4 {
   height: 100%;
   background: #000;
   opacity: 0.7;
+  transition: 0.5s;
 }
 .menu-overlay {
   opacity: 0.4;
+  transition: 0.5s;
 }
 .menu-mobile {
   position: fixed;

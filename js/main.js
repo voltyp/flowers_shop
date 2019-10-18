@@ -110,11 +110,8 @@ $(function() {
       return
     }    
 
-    $('.modal-overlay').hide('slow');
-    $('.modal-call-back').hide('slow');
-    $('.modal-select-city').hide('slow');
-    $('.modal-buy').hide('slow');
-    $('.modal-review').hide('slow');
+    $('.modal-overlay').hide();
+    $('.modal-wrap').hide();
     $('.personal-data').hide('slow');
   });
   
@@ -125,8 +122,8 @@ $(function() {
     
     $('body').removeClass('start-page')
     $('#city').text(selectCity)
-    $('.modal-overlay').hide('slow')
-    $('.modal-select-city').hide(700)
+    $('.modal-overlay').hide()
+    $('.modal-select-city').hide()
 
     flagStart = false;
   });
@@ -134,28 +131,28 @@ $(function() {
   // callback
   $('.button-callback').on('click', function(e){
     e.preventDefault()
-    $('.modal-call-back').toggleClass('hide');
-    $('.modal-overlay').show('slow');
+    $('.modal-call-back').show();
+    $('.modal-overlay').show();
   });
 
   $('.review-button').on('click', function(e){
     e.preventDefault()
-    $('.modal-review').toggleClass('hide');
-    $('.modal-overlay').show('slow');
+    $('.modal-review').show();
+    $('.modal-overlay').show();
   });
 
   $('.personal-data-link').on('click', function(e){
     e.preventDefault()
     $('.personal-data').show();
-    $('.modal-overlay').show('slow');
+    $('.modal-overlay').show();
   });
 
   $('.card-product__link').each(function(i,item){
     
     $(item).on('click', function(e) {
       e.preventDefault();
-      $('.modal-overlay').show('slow');
-      $('.modal-buy').show('slow');
+      $('.modal-overlay').show();
+      $('.modal-buy').show();
     });
   });
 
