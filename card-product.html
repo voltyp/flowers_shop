@@ -1367,6 +1367,7 @@
   </div>
   <div class="modal-overlay hide"></div>
   <div class="menu-overlay hide"></div>
+  <a href="#top" class="page-top">↑</a>
 </div>
 
   <script src="js/jquery-3.3.1.min.js"></script>
@@ -1375,30 +1376,13 @@
   <script src="js/jquery.elevateZoom-3.0.8.min.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- <script>
+  <script>
     $(function(){
-      $( '#example5' ).sliderPro({
-        width: 440,
-        height: 527,
-        orientation: 'horizontal',
-        loop: false,
-        responsive: true,
-        arrows: true,
-        buttons: false,
-        thumbnailsPosition: 'left',
-        thumbnailPointer: true,
-        thumbnailWidth: 116,
-        thumbnailHeight: 116,
-        autoplay: false,
-        forceSize: 'contain',
-        breakpoints: {
-          1120: {
-            width: 340,
-            height: 427,
-          }
-        }
+      $(".zoom-image").elevateZoom({
+        zoomType: "inner",
+        cursor: "crosshair"
       });
     })
-  </script> -->
+  </script>
 </body>
 </html>
