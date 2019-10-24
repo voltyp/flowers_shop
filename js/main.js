@@ -362,14 +362,21 @@ $('.menu-mobile__item').on('click', function() {
         iTab = i;
       item.classList.remove('i');
     });
+
     $(this).addClass('tabs-active');
 
-    $('.zoom-image').each(function(i, item){
-     console.log(item);
+    $('.tabs_right').children('img').each(function(i, item){
      item.classList.add('hide')
+     item.classList.remove('zoom-image')
 
       if (i === iTab){        
-       item.classList.remove('hide')  
+       item.classList.remove('hide') 
+       item.classList.add('zoom-image'); 
+       $(document).remove('.zoomContainer');
+       $(".zoom-image").elevateZoom({
+        zoomType: "inner",
+        cursor: "crosshair"
+      });
       }
     });
   });
@@ -384,7 +391,7 @@ $('.menu-mobile__item').on('click', function() {
 
   $('.page-top').on('click', function(e) {
     e.preventDefault();
-    $('html, body').animate({scrollTop:0}, '300');
+    $('html, body').animate({scrollTop:0});
   });
   
 
