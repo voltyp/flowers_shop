@@ -123,7 +123,7 @@ $(function() {
     $('body').removeClass('start-page')
     $('#city').text(selectCity)
     $('.modal-overlay').hide()
-    $('.modal-select-city').hide()
+    $('.modal-select-city').hide(700)
 
     flagStart = false;
   });
@@ -391,7 +391,7 @@ $('.menu-mobile__item').on('click', function() {
 
   $('.page-top').on('click', function(e) {
     e.preventDefault();
-    $('html, body').animate({scrollTop:0});
+    $('html, body').scrollTop(0);
   });
   
 
