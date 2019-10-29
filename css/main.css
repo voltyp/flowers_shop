@@ -30,6 +30,9 @@ p a:hover {
 button {
   border: 0;
 }
+input {
+  font-size: 16px;
+}
 input:active,
 :hover,
 :focus,
@@ -1633,7 +1636,6 @@ h4 {
 }
 .hide {
   display: none;
-  opacity: 0;
   transition: 0.5s;
 }
 .show {
@@ -2285,6 +2287,10 @@ h4 {
     width: 78%;
     padding: 40px;
   }
+  .card-product__img:hover .card-product__img_text,
+  .card-product__img:hover .card-product__img_bg {
+    opacity: 0;
+  }
 }
 @media (max-width: 470px) {
   .tabs-item {
@@ -2292,6 +2298,9 @@ h4 {
   }
   .zoom-image {
     width: 290px;
+  }
+  .header-tagline {
+    font-size: 13px;
   }
 }
 @media (max-width: 450px) {

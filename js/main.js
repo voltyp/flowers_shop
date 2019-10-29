@@ -391,7 +391,12 @@ $('.menu-mobile__item').on('click', function() {
 
   $('.page-top').on('click', function(e) {
     e.preventDefault();
-    $('html, body').scrollTop(0);
+
+    if ($(window).width() > 700) 
+      $('html, body').animate({ scrollTop: 0 }, 10);
+    else
+      $('html, body').animate({ scrollTop: 0 }, 800);
+    
   });
   
 

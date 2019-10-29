@@ -35,6 +35,10 @@ button {
   border: 0;
 }
 
+input {
+  font-size: 16px;
+}
+
 input:active, :hover, :focus,
 select:active, :hover, :focus,
 option:active, :hover, :focus {
@@ -2868,6 +2872,10 @@ h4 {
      width: 78%;
      padding: 40px;
    }
+   .card-product__img:hover .card-product__img_text,
+   .card-product__img:hover .card-product__img_bg {
+      opacity: 0;
+    }
 }
 
 @media (max-width: 470px) {
@@ -2876,6 +2884,9 @@ h4 {
   }
   .zoom-image {
     width: 290px;
+  }
+  .header-tagline {
+    font-size: 13px;
   }
 }
 
