@@ -46,6 +46,13 @@ option:active, :hover, :focus {
   outline-offset: 0;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
 textarea {
   padding: 0;
   resize: none;
@@ -712,7 +719,7 @@ h4 {
 // card-product
 .card-product {
   width: 22%;
-  min-width: 240px;
+  // min-width: 240px;
   margin: 0 15px 60px 15px;
   font-size: 1.2857rem;
   text-align: center;
@@ -722,6 +729,7 @@ h4 {
   &__img {
     position: relative;
     margin-bottom: 5px;
+    overflow: hidden;
 
     & img {
       width: 100%;
@@ -2457,7 +2465,19 @@ h4 {
   .slider-gift-arr-r.slick-arrow,
   .slider-related-arr-r.slick-arrow,
   .slider-related-arr-l.slick-arrow {
-    display: none !important;
+    // display: none !important;
+  }
+
+  .slider-gift-arr-l,
+  .slider-related-arr-l,
+  .slider-recently-watched-arr-l {
+    left: 3px;
+  }
+
+  .slider-gift-arr-r,
+  .slider-related-arr-r,
+  .slider-recently-watched-arr-r {
+    right: 3px;
   }
 
   .tabs {
@@ -2498,8 +2518,17 @@ h4 {
 }
 
 @media (max-width: 1120px) {
+  .catalog-items {
+    margin: 0;
+  }
   .card-product {
-    width: 30%;
+
+    margin: 0 5px 60px 5px;
+
+    &__button {
+      width: 90%;
+      font-size: 1rem;
+    }
   }  
 
   .feedback-l.slick-arrow {
@@ -2509,8 +2538,6 @@ h4 {
   .feedback-r.slick-arrow {
     right: 0;
   }
-
-
 
 }
 
@@ -2535,6 +2562,7 @@ h4 {
  
   .middle-action .timer__title {
     font-size: 28px;
+    padding: 0 5px;
     white-space: nowrap;
   }
   .middle-action .timer__item {
@@ -2561,6 +2589,10 @@ h4 {
       }
     }
   }
+
+  .card-product__button svg {
+    width: 15px;
+  }
 }
 
 @media (max-width: 990px) {
@@ -2577,8 +2609,16 @@ h4 {
     min-width: 100%;
     margin-bottom: 15px;
   }
-  .card-product__img_text {
-    padding: 19px;
+  .card-product {
+
+    &__img_text {
+      padding: 19px;
+      font-size: 16px;
+    }
+
+    &__button {
+      padding: 5px 0;
+    }
   }
 
   .page-product {
@@ -2590,6 +2630,11 @@ h4 {
     margin-bottom: 50px;
     flex: 0;
   }
+  
+  .timer__counter {
+    font-size: 20px;
+  }
+
 
 }
 
@@ -2615,8 +2660,7 @@ h4 {
 }
 @media (max-width: 930px) {
   .card-product {
-    min-width: 240px;
-    width: 29%;
+    width: 30%;
   }
   .form-step-2__col:nth-child(2) {
     margin-right: 125px;
@@ -2747,6 +2791,10 @@ h4 {
   .modal-wrap {
     width: 95%;
   }
+
+  .card-product__button {
+      font-size: 12px;   
+  }
 }
 
 
@@ -2781,8 +2829,14 @@ h4 {
     display: none;
   }
   .card-product {
-    width: 56%;
+    width: 47%;
+    font-size: 12px;
   } 
+
+  .timer__counter {
+    font-size: 15px;
+
+  }
 
   .main-slider__text {
     font-size: 1rem;
@@ -2923,6 +2977,22 @@ h4 {
     padding: 20px 0;
     font-size: 1rem;
   }
+}
+
+@media (max-width: 450px) {
+  .card-product {
+    width: 90%;
+
+    &__button {
+      padding: 10px 0;
+      font-size: 1.2857rem;
+    }
+  }
+  
+  .timer__counter {
+    font-size: 23px;
+  }
+
 }
 
 .sp-left-thumbnails.sp-has-pointer .sp-selected-thumbnail:before,
