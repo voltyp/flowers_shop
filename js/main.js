@@ -389,6 +389,16 @@ $('.menu-mobile__item').on('click', function() {
     }
   });
 
+  if ($(window).outerWidth() <= 765) {
+    $('.num-inpt').each(function(i,item){
+      console.log($(item).attr('type', 'tel'))
+    })
+  } else {
+    $('.num-inpt').each(function(i,item){
+      console.log($(item).attr('type', 'number'))
+    })
+  }
+
   $('.page-top').on('click', function(e) {
     e.preventDefault();
 
@@ -398,6 +408,7 @@ $('.menu-mobile__item').on('click', function() {
       $('html, body').animate({ scrollTop: 0 }, 800);
     
   });
-  
+
+
 
 });
