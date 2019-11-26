@@ -73,7 +73,7 @@ h4 {
   margin: 0 auto;
 }
 .block-header {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-family: Book Antiqua;
   font-style: normal;
   font-weight: bold;
@@ -148,7 +148,7 @@ h4 {
 }
 .top-header {
   display: flex;
-  height: 55px;
+  height: 45px;
   justify-content: space-between;
   align-content: center;
 }
@@ -235,7 +235,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 165px;
+  height: 100px;
 }
 .midle-header-wrap {
   background: #F7F7F7;
@@ -290,7 +290,7 @@ h4 {
 .main-menu {
   display: flex;
   align-items: center;
-  height: 81px;
+  height: 42px;
   font-weight: 600;
   font-size: 1.071rem;
 }
@@ -395,7 +395,7 @@ h4 {
 .main-slider {
   position: relative;
   max-width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   overflow: hidden;
 }
 .main-slider__banner {
@@ -552,15 +552,16 @@ h4 {
 .catalog {
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 .catalog-menu {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 .catalog-menu__item {
   margin-left: 44px;
+  font-size: 16px;
 }
 .catalog-menu__item:first-child {
   margin-left: 0;
@@ -584,7 +585,7 @@ h4 {
 }
 .card-product {
   width: 22%;
-  margin: 0 15px 60px 15px;
+  margin: 0 15px 30px 15px;
   font-size: 1.2857rem;
   text-align: center;
   border-radius: 9px;
@@ -683,7 +684,7 @@ h4 {
 .middle-action {
   display: flex;
   flex-grow: 1;
-  margin: 0 15px 60px 15px;
+  margin: 0 15px 30px 15px;
   background: #F7F7F7;
   border-radius: 9px;
 }
@@ -733,12 +734,12 @@ h4 {
   border-radius: 9px;
 }
 .wrap-review {
-  margin: 60px auto;
+  margin: 30px auto;
   background: url('../img/review-bg.jpg') no-repeat center;
 }
 .wrap-review .block-header {
   margin-bottom: 0;
-  padding: 60px 0;
+  padding: 30px 0;
   color: #fff;
 }
 .wrap-review .slider-review {
@@ -803,9 +804,6 @@ h4 {
   color: #fff;
   text-decoration: underline;
 }
-.about-company .block-header {
-  margin-bottom: 60px;
-}
 .about-company__description {
   font-size: 1.143rem;
   line-height: 29px;
@@ -824,11 +822,11 @@ h4 {
 .about-company__video {
   max-width: 701px;
   height: 393px;
-  margin: 60px auto;
+  margin: 30px auto;
 }
 .block-header.trust {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 15px;
 }
 .block-header.trust:after {
   position: absolute;
@@ -932,11 +930,11 @@ h4 {
 }
 .location .buttom-normal {
   border: 0;
-  margin-bottom: 101px;
+  margin-bottom: 30px;
   background: #0F3978;
 }
 .location .block-header {
-  padding-top: 20px;
+  margin-bottom: 10px;
 }
 .footer {
   padding-top: 60px;
@@ -1049,11 +1047,8 @@ h4 {
   text-align: right;
 }
 .catalog_page__products .catalog-items {
-  margin-top: 31px;
+  margin-top: 15px;
   justify-content: center;
-}
-.catalog_page__products .card-product__title {
-  font-size: 1.757rem;
 }
 .page-product {
   display: flex;
@@ -1188,7 +1183,7 @@ h4 {
   font-size: 1.714rem;
 }
 .page-product-subscribe {
-  margin-bottom: 61px;
+  margin-bottom: 30px;
   font-size: 1.143rem;
 }
 .page-product-subscribe img {
@@ -1196,7 +1191,7 @@ h4 {
   cursor: pointer;
 }
 .page-product__description-card {
-  margin-bottom: 100px;
+  margin-bottom: 35px;
 }
 .page-product__description-card_title {
   font-weight: bold;
@@ -1209,13 +1204,13 @@ h4 {
 }
 .recently-watched-items {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 .recently-watched-items .catalog-items {
   align-items: flex-start;
 }
 .gifts-items {
-  padding: 100px 0;
+  padding: 30px 0;
   background: #F7F7F7;
 }
 .gifts-items .slider-gift-wrap .card-product__cost_item {
@@ -1684,7 +1679,7 @@ h4 {
 .pag-nav {
   display: flex;
   justify-content: center;
-  margin: 30px 0;
+  margin: 15px 0;
 }
 .pag-nav__item {
   margin-right: 10px;
