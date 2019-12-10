@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="510147a2-fc80-4624-9d18-d049d0151e86" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basket-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/basket-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basket-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/basket-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basket-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/basket-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basket.html" beforeDir="false" afterPath="$PROJECT_DIR$/basket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/card-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/card-product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opt.html" beforeDir="false" afterPath="$PROJECT_DIR$/opt.html" afterDir="false" />
-    </list>
+    <list default="true" id="510147a2-fc80-4624-9d18-d049d0151e86" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +54,7 @@
       <updated>1573915079522</updated>
       <workItem from="1573915081075" duration="651000" />
       <workItem from="1574431812355" duration="7000" />
-      <workItem from="1575900231068" duration="609000" />
+      <workItem from="1575900231068" duration="1367000" />
     </task>
     <servers />
   </component>

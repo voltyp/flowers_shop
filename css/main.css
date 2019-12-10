@@ -689,7 +689,7 @@ h4 {
 .middle-action {
   display: flex;
   flex-grow: 1;
-  margin: 0 15px 30px 15px;
+  margin: 0 15px 20px 15px;
   background: #F7F7F7;
   border-radius: 9px;
 }
@@ -1513,7 +1513,7 @@ h4 {
 .label-style_i {
   position: relative;
   display: inline-block;
-  width: 18px;
+  min-width: 18px;
   height: 18px;
   margin-right: 10px;
   border: 2px solid #D31473;
@@ -1665,7 +1665,7 @@ h4 {
 .pag-nav {
   display: flex;
   justify-content: center;
-  margin: -20px 0 5px 0;
+  margin: -10px 0 5px 0;
 }
 .pag-nav__item {
   margin-right: 10px;
@@ -2356,6 +2356,9 @@ h4 {
     padding: 20px 0;
     font-size: 1rem;
   }
+  .step-third label {
+    margin-left: 5px;
+  }
 }
 @media (max-width: 360px) {
   .card-product {
@@ -2367,6 +2370,9 @@ h4 {
   }
   .timer__counter {
     font-size: 23px;
+  }
+  .step-third label {
+    margin-left: 20px;
   }
 }
 .sp-left-thumbnails.sp-has-pointer .sp-selected-thumbnail:before,

@@ -235,14 +235,14 @@ $('.menu-mobile__item').on('click', function() {
       {
         breakpoint: 730,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1
         }
       },
       {
         breakpoint: 500,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1
         }
       },
@@ -270,14 +270,15 @@ $('.menu-mobile__item').on('click', function() {
       {
         breakpoint: 730,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          speed: 300,
         }
       },
       {
         breakpoint: 500,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1
         }
       },
@@ -305,14 +306,15 @@ $('.menu-mobile__item').on('click', function() {
       {
         breakpoint: 730,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          speed: 300
         }
       },
       {
         breakpoint: 500,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1
         }
       },
@@ -340,14 +342,15 @@ $('.menu-mobile__item').on('click', function() {
       {
         breakpoint: 730,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          speed: 300
         }
       },
       {
         breakpoint: 500,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1
         }
       },
@@ -355,32 +358,50 @@ $('.menu-mobile__item').on('click', function() {
   });
 
   $('.tabs_left').on('click', '.tabs-item', function(e) {
+    /*
+      тут костыль, если клик по активному табу происходит несколько раз
+      то elevateZoom несколько раз отрабатывает и создает дубли,
+      которые ломают работу elevateZoom
+      времени разбираться не было. сорян 
+    */
+    if (this.classList.contains('tabs-active')) {
+      e.preventDefault()
+    }
+
+    $('.zoomContainer').remove();
     let iTab = 0;
     $(this).addClass('i');
     
     $('.tabs-item').each(function(i, item){
       item.classList.remove('tabs-active');
+
       if($(this).hasClass('i'))
         iTab = i;
+
       item.classList.remove('i');
     });
 
     $(this).addClass('tabs-active');
 
     $('.tabs_right').children('img').each(function(i, item){
+     
      item.classList.add('hide')
      item.classList.remove('zoom-image')
 
-      if (i === iTab){        
+      if (i === iTab){     
+
        item.classList.remove('hide') 
        item.classList.add('zoom-image'); 
-       $(document).remove('.zoomContainer');
-       $(".zoom-image").elevateZoom({
-        zoomType: "inner",
-        cursor: "crosshair"
-      });
+       
+       setTimeout(() => {
+        $(".zoom-image").elevateZoom({
+          zoomType: "inner",
+          cursor: "crosshair"
+         }, 200);
+       })
+      
       }
-    });
+    });    
   });
 
   $(window).scroll(function() {
